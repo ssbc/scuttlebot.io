@@ -25,6 +25,12 @@ code, pre {
   margin: 0 auto;
   text-align: center;
 }
+.hero.small img {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  vertical-align: middle;
+}
 .hero.big {
   margin-bottom: 80px;
 }
@@ -42,21 +48,17 @@ code, pre {
   text-align: center;
   border-right: 1px solid #ddd;
 }
-.tabs > div.current:before {
-  content: '\\25be';
-  position: absolute;
-  left: 47%;
-  top: 0px;
-  line-height: 1;
-  color: #777;
-}
 .tabs > div a {
   display: inline-block;
-  font-size: 1.85em;
   font-weight: 300;
   color: #777;
   padding: 0.4em 1.2em;
   text-decoration: none;
+}
+.tabs > div.current a {
+  border-bottom: 3px solid gray;
+  padding-bottom: 2px;
+  color: #444;
 }
 .tabs > div a:hover {
   color: #aaa;

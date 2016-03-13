@@ -9,8 +9,8 @@ module.exports = (opts) => {
       <h1>Scuttlebot<br><small>peer-to-peer mesh database</small></h1>
     </div>`
   } else {
-    title = `<div class="hero">
-      <h1>Scuttlebot<br><small>peer-to-peer mesh database</small></h1>
+    title = `<div class="hero small">
+      <h1><a href="/"><img src="/img/hermies-256.png"></a> Scuttlebot<br><small>peer-to-peer mesh database</small></h1>
     </div>`
   }
 
