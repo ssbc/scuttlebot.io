@@ -18,3 +18,23 @@ npm run watch
 ## Serve
 
 Point your server at `./build`.
+
+## Build process
+
+index.js will iterate `./tmpl`, run any templates, and copy output to `./build`.
+
+### Templates
+
+Templates are `.html.js` and `.css.js` files in `./tmpl`.
+
+Template files should export a single function, which outputs the html/css.
+
+### Partials
+
+Partials are `.part.js` files in `./tmpl`.
+
+They are ignored by the build process.
+
+### Static assets
+
+All other files are directly copied from `./tmpl` to `./build`.

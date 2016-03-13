@@ -1,8 +1,10 @@
 var page = require('./page.part')
 var installTheDatabase = require('./basics/install-the-database.html')
+
+// this page is the same as the first guide in basics, but with the big hero
 module.exports = () => page({
+  bigHero: true,
   tab: 'basics',
   path: '/basics/install-the-database.html',
-  bigHero: true,
   content: installTheDatabase.content()
 })
