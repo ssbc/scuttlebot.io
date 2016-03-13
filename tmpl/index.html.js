@@ -6,7 +6,5 @@ module.exports = () => page({
   bigHero: true,
   tab: 'basics',
   path: '/basics/install-the-database.html',
-  content: installTheDatabase.content() + `
-    <p><a class="cta" href="todo">&#9654; See it in action</a></p>
-  `
+  content: installTheDatabase.content()
 })

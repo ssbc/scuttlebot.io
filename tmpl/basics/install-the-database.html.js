@@ -11,6 +11,7 @@ module.exports.content = () => `
   <code><pre>npm install -g scuttlebot</pre></code>
   <h2>Start the server</h2>
   <code><pre>sbot server</pre></code>
+  <p><a class="cta" href="todo">&#9654; See it in action</a></p>
 `
   // <h2>Autostart the server (OSX)</h2>
   // <p>todo</p>

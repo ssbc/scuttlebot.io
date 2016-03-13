@@ -205,30 +205,33 @@ a.cta:hover {
   display: flex;
   width: 800px;
   margin: 0 auto;
-  border: 1px solid #ddd;
-  border-bottom: 0;
-  border-right: 0;
+  box-sizing: border-box;
 }
 .tabs > div {
   position: relative;
   flex: 1;
   text-align: center;
-  border-right: 1px solid #ddd;
+}
+.tabs > div:last-child {
+  border: 0;
 }
 .tabs > div a {
   display: inline-block;
   font-weight: 300;
   color: #777;
-  padding: 0.4em 1.2em;
+  padding: 0.4em 1.2em ;
   text-decoration: none;
 }
 .tabs > div.current a {
-  border-bottom: 3px solid gray;
-  padding-bottom: 2px;
   color: #444;
 }
+.tabs > div.current a:before {
+  content: '\25b6 ';
+
+  margin-right: 5px;
+}
 .tabs > div a:hover {
-  color: #aaa;
+  color: #333;
 }
 
 .nav-content-unit {
@@ -236,14 +239,17 @@ a.cta:hover {
   width: 800px;
   margin: 0px auto;
   border: 1px solid #ddd;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+  box-sizing: border-box;
 }
 
 .nav {
-  background: #eee;
+  background: #fafafa;
   flex: 0 0 210px;
   list-style: none;
   padding: 0;
   margin: 0;
+  border-right: 1px solid #ccc;
 }
 .nav li {
   margin: 0.5em;
@@ -300,6 +306,7 @@ a.cta:hover {
 .footer-section a {
   text-decoration: none;
   color: gray;
+  font-weight: 300;
 }
 .footer-section a:hover {
   color: #555;
