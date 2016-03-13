@@ -1,9 +1,9 @@
 var page = require('../page.part')
 module.exports = () => page({
-  tab: 'basics',
-  path: '/basics/open-a-client.html',
+  tab: 'social',
+  path: '/social/social-network.html',
   content: `
-    <h2>Open a client</h2>
+    <h2>Social network</h2>
     <p>todo</p>
   `
 })

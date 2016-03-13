@@ -14,3 +14,46 @@ module.exports.basics = (c) => `<ul class="nav">
   ${item(c, '/basics/read-a-file.html', 'Read a file')}
   ${item(c, '/basics/publish-a-file.html', 'Publish a file')}
 </ul>`
+
+module.exports.social = (c) => `<ul class="nav">
+  ${item(c, '/social/social-network.html', 'Social network')}
+  ${item(c, '/social/follow-users.html', 'Follow users')}
+  ${item(c, '/social/update-your-profile.html', 'Update your profile')}
+  ${item(c, '/social/join-a-pub.html', 'Join a Pub')}
+  ${item(c, '/social/create-a-pub.html', 'Create a Pub')}
+  ${item(c, '/social/create-pub-invites.html', 'Invite users to a Pub')}
+</ul>`
+
+module.exports.advanced = (c) => `<ul class="nav">
+  ${item(c, '/advanced/writing-applications.html', 'Writing applications')}
+  ${item(c, '/advanced/create-test-users.html', 'Create test users')}
+  ${item(c, '/advanced/create-test-dbs.html', 'Create test databases')}
+  ${item(c, '/advanced/configure-scuttlebot.html', 'Configure Scuttlebot')}
+  ${item(c, '/advanced/message-schemas.html', 'Message schemas')}
+  ${item(c, '/advanced/linking-messages.html', 'Linking messages')}
+  ${item(c, '/advanced/pull-streams.html', 'Pull streams')}
+  ${item(c, '/advanced/processing-logs.html', 'Processing logs')}
+  ${item(c, '/advanced/crdts.html', 'CRDTs')}
+</ul>`
+
+module.exports.whitepapers = (c) => `<ul class="nav">
+  ${item(c, '/whitepapers/secure-scuttlebutt.html', 'Secure Scuttlebutt')}
+  ${item(c, '/whitepapers/secret-handshake.html', 'Secret Handshake')}
+  ${item(c, '/whitepapers/private-box.html', 'Private Box')}
+</ul>`
+
+module.exports.modules = (c) => `<ul class="nav">
+  ${item(c, '/modules/ssb-client.html', 'SSB-Client')}
+  ${item(c, '/modules/scuttlebot.html', 'Scuttlebot')}
+  ${item(c, '/modules/scuttlebot-blobs.html', 'Scuttlebot.Blobs')}
+  ${item(c, '/modules/scuttlebot-friends.html', 'Scuttlebot.Friends')}
+  ${item(c, '/modules/scuttlebot-gossip.html', 'Scuttlebot.Gossip')}
+  ${item(c, '/modules/scuttlebot-invite.html', 'Scuttlebot.Invite')}
+  ${item(c, '/modules/scuttlebot-private.html', 'Scuttlebot.Private')}
+  ${item(c, '/modules/scuttlebot-replicate.html', 'Scuttlebot.Replicate')}
+  ${item(c, '/modules/ssb-msg-schemas.html', 'Message Schemas')}
+  ${item(c, '/modules/ssb-feed.html', 'SSB-Feed')}
+  ${item(c, '/modules/ssb-keys.html', 'SSB-Keys')}
+  ${item(c, '/modules/ssb-refs.html', 'SSB-Refs')}
+  ${item(c, '/modules/ssb-msgs.html', 'SSB-Msgs')}
+</ul>`

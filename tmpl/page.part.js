@@ -1,7 +1,11 @@
 var head = require('./head.part')
 var tabs = require('./tabs.part')
 var leftnav = require('./leftnav.part')
+var footer = require('./footer.part')
+
 module.exports = (opts) => {
+
+  // render the hero
   var title = ''
   if (opts.bigHero) {
     title = `<div class="hero big">
@@ -14,17 +18,22 @@ module.exports = (opts) => {
     </div>`
   }
 
+  // pick the nav
+  var leftnavFn = leftnav[opts.tab || 'basics']
+
+  // render the page
   return `<html>
     ${head()}
     <body>
       ${title}
       ${tabs(opts.tab)}
       <div class="nav-content-unit">
-        ${leftnav.basics(opts.path)}
+        ${leftnavFn(opts.path)}
         <div class="content">
           ${opts.content}
         </div>
       </div>
+      ${footer(opts.path)}
     </body>
   </html>`
 }

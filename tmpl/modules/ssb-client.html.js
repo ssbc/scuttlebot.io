@@ -1,9 +1,9 @@
 var page = require('../page.part')
 module.exports = () => page({
-  tab: 'basics',
-  path: '/basics/open-a-client.html',
+  tab: 'modules',
+  path: '/modules/ssb-client.html',
   content: `
-    <h2>Open a client</h2>
+    <h2>SSB Client</h2>
     <p>todo</p>
   `
 })
