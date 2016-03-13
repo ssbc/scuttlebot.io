@@ -1,0 +1,17 @@
+{
+  "name": "scuttlebot.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js",
+    "watch": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Paul Frazee <pfrazee@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "fs-jetpack": "^0.7.2",
+    "nodemon": "^1.9.1"
+  }
+}
