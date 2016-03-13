@@ -15,9 +15,7 @@ Auto-build watcher:
 npm run watch
 ```
 
-## Serve
-
-Point your server at `./build`.
+Then point your server at `./build` to serve.
 
 ## Build process
 
