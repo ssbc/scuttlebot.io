@@ -21,16 +21,67 @@
         <ul class="nav">
   <li ><a href="/social/social-network.html" title="Social network">Social network</a></li>
   <li ><a href="/social/follow-users.html" title="Follow users">Follow users</a></li>
-  <li class="current"><a href="/social/update-your-profile.html" title="Update your profile">Update your profile</a></li>
   <li ><a href="/social/query-the-social-graph.html" title="Query the social graph">Query the social graph</a></li>
+  <li class="current"><a href="/social/update-your-profile.html" title="Update your profile">Update your profile</a></li>
   <li ><a href="/social/join-a-pub.html" title="Join a Pub">Join a Pub</a></li>
   <li ><a href="/social/create-a-pub.html" title="Create a Pub">Create a Pub</a></li>
-  <li ><a href="/social/invite-users-to-a-pub.html" title="Invite users to a Pub">Invite users to a Pub</a></li>
 </ul>
         <div class="content">
           
-    <h2>Update your profile</h2>
-    <p>todo</p>
+    <p>
+      Each user has a profile, comprised of data published by the user and by other users.
+      The profile content is controlled by <code>type:about</code> messages.
+    </p>
+
+    <h2>Set a petname</h2>
+    <p>
+      Users can publish petnames for self and others.
+    </p>
+    <div class="code-examples">
+    <div class="head">
+      <div class="tab">js</div><div class="tab">bash</div>
+    </div>
+    <div class="body">
+      <pre><code class="language-js">sbot.publish({
+  type: 'about',
+  about: feedId,
+  name: name
+}, cb)</code></pre><pre><code class="language-bash">sbot publish --type about --about {feedId} --name {name}</code></pre>
+    </div>
+  </div>
+
+    <h2>Set a profile pic</h2>
+    <p>
+      Users can publish pictures for self and others.
+      First, <a href="/basics/publish-a-file.html">add the image file to the blobstore.</a>
+      Then, publish this message with the output hash.
+    </p>
+    <div class="code-examples">
+    <div class="head">
+      <div class="tab">js</div><div class="tab">bash</div>
+    </div>
+    <div class="body">
+      <pre><code class="language-js">sbot.publish({
+  type: 'about',
+  about: feedId,
+  image: {
+    link: hash,         // required
+    width: widthInPx,   // optional, but recommended
+    height: heightInPx, // optional, but recommended
+    name: fileName,     // optional, but recommended
+    size: sizeInBytes,  // optional, but recommended
+    type: mimeType      // optional, but recommended
+  }
+}, cb)</code></pre><pre><code class="language-bash">sbot publish --type contact --contact {feedId} --no-following</code></pre>
+    </div>
+  </div>
+
+    <p class="next"><a href="/social/join-a-pub.html">Join a pub</a></p>
+    <ul class="see-also">
+      <li><a href="/basics/publish-a-file.html">Publish a file</a></li>
+      <li><a href="/advanced/message-schemas.html">Message schemas</a></li>
+      <li><a href="/advanced/linking-messages.html">Linking messages</a></li>
+    </ul>
   
         </div>
       </div>

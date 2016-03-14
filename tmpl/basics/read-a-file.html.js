@@ -19,7 +19,7 @@ module.exports = () => page({
     <h2>Read a file to disk</h2>
     ${ com.code({ js: jsSnippet3, bash: bashSnippet3 }) }
 
-    <p class="next"><a href="/social/social-network.html">Read a file</a></p>
+    <p class="next"><a href="/social/social-network.html">Social network</a></p>
     <ul class="see-also">
       <li><a href="/modules/scuttlebot-blobs.html">Scuttlebot.Blobs API</a></li>
       <li><a href="/advanced/linking-messages.html">Linking messages</a></li>

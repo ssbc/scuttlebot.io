@@ -9,7 +9,7 @@ body {
   font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2 {
   font-weight: normal;
 }
 h1 small {
@@ -18,6 +18,10 @@ h1 small {
 
 code, pre {
   font-family: 'Source Code Pro', monospace;
+}
+
+p {
+  line-height: 1.5;
 }
 
 a {

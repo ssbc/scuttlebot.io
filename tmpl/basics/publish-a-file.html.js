@@ -64,7 +64,7 @@ $ cat ./hello.txt | sbot blobs.add
 var jsSnippet3 = `
 ssb.publish({
   type: 'post',
-  text: 'checkout this file!',
+  text: 'checkout [this file!]('+hash+')',
   mentions: [{
     link: hash,        // the hash given by blobs.add
     name: 'hello.txt', // optional, but recommended
