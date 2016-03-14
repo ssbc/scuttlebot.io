@@ -3,7 +3,7 @@ module.exports = () => page({
   tab: 'social',
   path: '/social/social-network.html',
   content: `
-    <h2>Cypherspace: the Cryptographic Social Network</h2>
+    <h2>Social network</h2>
     <p>
       Scuttlebot forms a global cryptographic social network with its peers.
       Each user is identified by a public key, and publishes a log of signed messages, which other users "follow."

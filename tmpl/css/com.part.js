@@ -3,15 +3,23 @@ a.cta {
   display: inline-block;
   padding: 0.25em 0.75em;
   background: #4E9121;
+  background: linear-gradient(to bottom, #4E9121, #43801A);
   color: #fff;
   font-size: 1.5em;
   font-weight: 300;
-  border-radius: 3px;
-  margin: 1em 0;
+  border-radius: 1px;
+  margin: 0.5em 0;
+  box-shadow: 1px 2px 3px rgba(0,0,0,0.2);
+  transition: opacity 0.2s, box-shadow 0.2s;
 }
 a.cta:hover {
   text-decoration: none;
-  background: #3E8111;
+  opacity: 0.95;
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.4);
+}
+a.cta.dark {
+  background: #666;
+  background: linear-gradient(to bottom, #666, #555);
 }
 
 .next:before {
@@ -63,7 +71,6 @@ a.cta:hover {
   display: none;
   margin: 0 !important;
   padding: 0 !important;
-  font-size: 14px;
 }
 .code-examples pre.current {
   display: block;

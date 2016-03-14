@@ -1,12 +1,6 @@
-var com = require('../com.part')
-var page = require('../page.part')
+## SSB-Client
 
-module.exports = () => page({
-  tab: 'modules',
-  path: '/modules/ssb-client.html',
-  content: `
-    <h1>SSB-Client</h1>
-    ${ com.code({ js: `
+```js
 var ssbClient = require('ssb-client')
 
 // simplest usage, connect to localhost sbot
@@ -27,7 +21,7 @@ ssbClient(
   function (err, sbot) {
     // ...
   }
-)` }) }
-    <p><a href="https://github.com/ssbc/ssb-client">View on Github</a></p>
-  `
-})
+)
+```
+
+[View on Github](https://github.com/ssbc/ssb-client)

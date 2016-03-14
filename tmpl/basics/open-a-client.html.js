@@ -20,5 +20,6 @@ ssbClient(function (err, ssb) {
   if (err)
     throw err
 
-  // ssb is now ready
+  // ssb is now ready. when done:
+  ssb.close()
 })`
