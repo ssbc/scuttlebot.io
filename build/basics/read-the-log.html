@@ -24,13 +24,34 @@
   <li class="current"><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li ><a href="/basics/publish-a-message.html" title="Publish a message">Publish a message</a></li>
   <li ><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
-  <li ><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
   <li ><a href="/basics/publish-a-file.html" title="Publish a file">Publish a file</a></li>
+  <li ><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
 </ul>
         <div class="content">
           
     <h2>Read the log</h2>
-    <p>todo</p>
+    <div class="code-examples">
+    <div class="head">
+      <div class="tab">js</div><div class="tab">bash</div>
+    </div>
+    <div class="body">
+      <pre><code class="language-js">var pull = require('pull-stream')
+pull(
+  ssb.createLogStream({ limit: 100 }),
+  pull.collect(err, msgs) {
+    if (err)
+      throw err
+    console.log(msgs)
+  })
+)</code></pre><pre><code class="language-bash">sbot log --limit 100</code></pre>
+    </div>
+  </div>
+    <p class="next"><a href="/basics/publish-a-message.html">Publish a message</a></p>
+    <ul class="see-also">
+      <li><a href="/modules/scuttlebot.html"><code>createLogStream()</code> API</a></li>
+      <li><a href="/advanced/advanced-queries.html">Advanced queries</a></li>
+      <li><a href="/advanced/pull-streams.html">Pull streams</a></li>
+    </ul>
   
         </div>
       </div>
@@ -49,8 +70,9 @@
     <li><a href="https://github.com/ssbc/ssb-example-pm" title="CLI Private Msg">CLI Private Msg</a>
   </ul>
   <ul class="footer-section">
-    <li>Contact</li>
+    <li>Community</li>
     <li><p>#scuttlebutt on freenode</p></li>
+    <li><a href="https://github.com/ssbc">GitHub Org</a></li>
   </ul>
 </div>
     </body>

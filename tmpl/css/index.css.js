@@ -18,7 +18,6 @@ h1 small {
 
 code, pre {
   font-family: 'Source Code Pro', monospace;
-  color: #555;
 }
 
 a {

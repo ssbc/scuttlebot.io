@@ -11,14 +11,15 @@ module.exports.basics = (c) => `<ul class="nav">
   ${item(c, '/basics/read-the-log.html', 'Read the log')}
   ${item(c, '/basics/publish-a-message.html', 'Publish a message')}
   ${item(c, '/basics/encryption.html', 'Encryption')}
-  ${item(c, '/basics/read-a-file.html', 'Read a file')}
   ${item(c, '/basics/publish-a-file.html', 'Publish a file')}
+  ${item(c, '/basics/read-a-file.html', 'Read a file')}
 </ul>`
 
 module.exports.social = (c) => `<ul class="nav">
   ${item(c, '/social/social-network.html', 'Social network')}
   ${item(c, '/social/follow-users.html', 'Follow users')}
   ${item(c, '/social/update-your-profile.html', 'Update your profile')}
+  ${item(c, '/social/query-the-social-graph.html', 'Query the social graph')}
   ${item(c, '/social/join-a-pub.html', 'Join a Pub')}
   ${item(c, '/social/create-a-pub.html', 'Create a Pub')}
   ${item(c, '/social/invite-users-to-a-pub.html', 'Invite users to a Pub')}

@@ -20,7 +20,8 @@ module.exports = (c) => `<div class="footer">
     <li><a href="https://github.com/ssbc/ssb-example-pm" title="CLI Private Msg">CLI Private Msg</a>
   </ul>
   <ul class="footer-section">
-    <li>Contact</li>
+    <li>Community</li>
     <li><p>#scuttlebutt on freenode</p></li>
+    <li><a href="https://github.com/ssbc">GitHub Org</a></li>
   </ul>
 </div>`

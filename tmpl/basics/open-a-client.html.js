@@ -6,12 +6,15 @@ module.exports = () => page({
   path: '/basics/open-a-client.html',
   content: `
     <h2>Open a client</h2>
-    ${ com.code({ js: ssbClientSnippet }) }
-    <p>See <a href="/modules/ssb-client.html">ssb-client API</a> for config options.</p>
+    ${ com.code({ js: jsSnippet }) }
+    <p class="next"><a href="/basics/read-the-log.html">Read the log</a></p>
+    <ul class="see-also">
+      <li><a href="/modules/ssb-client.html">SSB-Client API</a> for config options.</li>
+    </ul>
   `
 })
 
-var ssbClientSnippet = `
+var jsSnippet = `
 var ssbClient = require('ssb-client')
 ssbClient(function (err, ssb) {
   if (err)

@@ -24,13 +24,70 @@
   <li ><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li ><a href="/basics/publish-a-message.html" title="Publish a message">Publish a message</a></li>
   <li class="current"><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
-  <li ><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
   <li ><a href="/basics/publish-a-file.html" title="Publish a file">Publish a file</a></li>
+  <li ><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
 </ul>
         <div class="content">
           
-    <h2>Encryption</h2>
-    <p>todo</p>
+    <h2>Publish an Encrypted Message</h2>
+    <div class="code-examples">
+    <div class="head">
+      <div class="tab">js</div>
+    </div>
+    <div class="body">
+      <pre><code class="language-js">ssb.private.publish(
+  // message:
+  {
+    type: 'post',
+    text: 'Hello, friend!'
+  },
+  // recipient PKs:
+  [
+    '@hxGxqPrplLjRG2vtj...wQpS730nNwE=.ed25519',
+    '@EMovhfIrFk4NihAKn...8pTxJNgvCCY=.ed25519'
+  ],
+  // cb:
+  function (err, privateMsg) {
+    // privateMsg.value.content is
+    // an encrypted string
+  }
+)</code></pre>
+    </div>
+  </div>
+    <h2>Decrypt a Message</h2>
+    <div class="code-examples">
+    <div class="head">
+      <div class="tab">js</div>
+    </div>
+    <div class="body">
+      <pre><code class="language-js">ssb.private.unbox(
+  privateMsg.value.content,
+  function (err, content) {
+    // 'content' is now an object
+    // (if you were a recipient)
+  }
+)</code></pre>
+    </div>
+  </div>
+    <h2>Is a message encrypted?</h2>
+    <div class="code-examples">
+    <div class="head">
+      <div class="tab">js</div>
+    </div>
+    <div class="body">
+      <pre><code class="language-js">function isPlaintext (msg) {
+  return (typeof msg.value.content == 'object')
+}
+function isEncrypted (msg) {
+  return (typeof msg.value.content == 'string')
+}</code></pre>
+    </div>
+  </div>
+    <p class="next"><a href="/basics/publish-a-file.html">Publish a file</a></p>
+    <ul class="see-also">
+      <li><a href="/advanced/private-box.html">Private Box</a></li>
+      <li><a href="/advanced/linking-messages.html">Linking messages</a></li>
+    </ul>
   
         </div>
       </div>
@@ -49,8 +106,9 @@
     <li><a href="https://github.com/ssbc/ssb-example-pm" title="CLI Private Msg">CLI Private Msg</a>
   </ul>
   <ul class="footer-section">
-    <li>Contact</li>
+    <li>Community</li>
     <li><p>#scuttlebutt on freenode</p></li>
+    <li><a href="https://github.com/ssbc">GitHub Org</a></li>
   </ul>
 </div>
     </body>

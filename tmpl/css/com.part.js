@@ -14,6 +14,27 @@ a.cta:hover {
   background: #3E8111;
 }
 
+.next:before {
+  content: 'Next: ';
+}
+
+.see-also {
+  padding: 0;
+  margin: 2em 0 0;
+  list-style: none;
+}
+.see-also:before {
+  content: 'See also';
+  font-size: 0.8em;
+  font-weight: bold;
+  color: #555;
+  text-transform: uppercase;
+}
+.see-also li {
+  margin-left: 1em;
+  padding: 0.25em 0.25em 0;
+}
+
 .code-examples .head {
   display: flex;
   color: #333;
@@ -42,6 +63,7 @@ a.cta:hover {
   display: none;
   margin: 0 !important;
   padding: 0 !important;
+  font-size: 14px;
 }
 .code-examples pre.current {
   display: block;

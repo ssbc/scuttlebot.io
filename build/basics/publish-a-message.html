@@ -24,13 +24,30 @@
   <li ><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li class="current"><a href="/basics/publish-a-message.html" title="Publish a message">Publish a message</a></li>
   <li ><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
-  <li ><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
   <li ><a href="/basics/publish-a-file.html" title="Publish a file">Publish a file</a></li>
+  <li ><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
 </ul>
         <div class="content">
           
     <h2>Publish a message</h2>
-    <p>todo</p>
+    <div class="code-examples">
+    <div class="head">
+      <div class="tab">js</div><div class="tab">bash</div>
+    </div>
+    <div class="body">
+      <pre><code class="language-js">ssb.publish({
+  type: 'post',
+  text: 'Hello, world!'
+}, function (err, msg) {
+  // 'msg' includes the hash-id and headers
+})</code></pre><pre><code class="language-bash">sbot publish --type post --text "Hello, world!"</code></pre>
+    </div>
+  </div>
+    <p class="next"><a href="/basics/encryption.html">Encryption</a></p>
+    <ul class="see-also">
+      <li><a href="/advanced/message-schemas.html">Message schemas</a></li>
+      <li><a href="/advanced/linking-messages.html">Linking messages</a></li>
+    </ul>
   
         </div>
       </div>
@@ -49,8 +66,9 @@
     <li><a href="https://github.com/ssbc/ssb-example-pm" title="CLI Private Msg">CLI Private Msg</a>
   </ul>
   <ul class="footer-section">
-    <li>Contact</li>
+    <li>Community</li>
     <li><p>#scuttlebutt on freenode</p></li>
+    <li><a href="https://github.com/ssbc">GitHub Org</a></li>
   </ul>
 </div>
     </body>
