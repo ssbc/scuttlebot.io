@@ -1,9 +1,9 @@
 var page = require('../page.part')
 module.exports = () => page({
-  tab: 'advanced',
-  path: '/advanced/create-test-users.html',
+  tab: 'modules',
+  path: '/modules/ssb-keys.html',
   content: `
-    <h2>Create test users</h2>
+    <h2>SSB-Keys</h2>
     <p>todo</p>
   `
 })

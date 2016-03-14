@@ -8,10 +8,10 @@ function item (current, path, label) {
 module.exports = (c) => `<div class="footer">
   <ul class="footer-section">
     <li>Guides</li>
-    ${item(c, '/guides/lets-write-a-todo-list-app.html', 'Let\'s Write: a Todo-List app')}
-    ${item(c, '/guides/lets-write-a-private-messaging-app.html', 'Let\'s Write: a Private Messaging app')}
-    ${item(c, '/guides/lets-write-a-file-sharing-app.html', 'Let\'s Write: a File-Sharing app')}
-    ${item(c, '/guides/how-to-use-pull-streams.html', 'How to use Pull Streams')}
+    ${item(c, '/guides/lets-write-a-todo-list-app/intro.html', 'Let\'s Write: a Todo-List app')}
+    ${item(c, '/guides/lets-write-a-private-messaging-app/intro.html', 'Let\'s Write: a Private Messaging app')}
+    ${item(c, '/guides/lets-write-a-file-sharing-app/intro.html', 'Let\'s Write: a File-Sharing app')}
+    ${item(c, '/guides/how-to-use-pull-streams/intro.html', 'How to use Pull Streams')}
   </ul>
   <ul class="footer-section">
     <li>Applications</li>

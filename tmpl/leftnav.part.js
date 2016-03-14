@@ -21,19 +21,19 @@ module.exports.social = (c) => `<ul class="nav">
   ${item(c, '/social/update-your-profile.html', 'Update your profile')}
   ${item(c, '/social/join-a-pub.html', 'Join a Pub')}
   ${item(c, '/social/create-a-pub.html', 'Create a Pub')}
-  ${item(c, '/social/create-pub-invites.html', 'Invite users to a Pub')}
+  ${item(c, '/social/invite-users-to-a-pub.html', 'Invite users to a Pub')}
 </ul>`
 
 module.exports.advanced = (c) => `<ul class="nav">
   ${item(c, '/advanced/writing-applications.html', 'Writing applications')}
-  ${item(c, '/advanced/create-test-users.html', 'Create test users')}
-  ${item(c, '/advanced/create-test-dbs.html', 'Create test databases')}
-  ${item(c, '/advanced/configure-scuttlebot.html', 'Configure Scuttlebot')}
+  ${item(c, '/advanced/creating-test-users.html', 'Creating test users')}
+  ${item(c, '/advanced/creating-test-databases.html', 'Creating test databases')}
   ${item(c, '/advanced/message-schemas.html', 'Message schemas')}
   ${item(c, '/advanced/linking-messages.html', 'Linking messages')}
+  ${item(c, '/advanced/advanced-queries.html', 'Advanced queries')}
   ${item(c, '/advanced/pull-streams.html', 'Pull streams')}
-  ${item(c, '/advanced/processing-logs.html', 'Processing logs')}
   ${item(c, '/advanced/crdts.html', 'CRDTs')}
+  ${item(c, '/advanced/configure-scuttlebot.html', 'Configure Scuttlebot')}
 </ul>`
 
 module.exports.whitepapers = (c) => `<ul class="nav">
@@ -51,9 +51,25 @@ module.exports.modules = (c) => `<ul class="nav">
   ${item(c, '/modules/scuttlebot-invite.html', 'Scuttlebot.Invite')}
   ${item(c, '/modules/scuttlebot-private.html', 'Scuttlebot.Private')}
   ${item(c, '/modules/scuttlebot-replicate.html', 'Scuttlebot.Replicate')}
-  ${item(c, '/modules/ssb-msg-schemas.html', 'Message Schemas')}
   ${item(c, '/modules/ssb-feed.html', 'SSB-Feed')}
   ${item(c, '/modules/ssb-keys.html', 'SSB-Keys')}
   ${item(c, '/modules/ssb-refs.html', 'SSB-Refs')}
   ${item(c, '/modules/ssb-msgs.html', 'SSB-Msgs')}
+  ${item(c, '/modules/ssb-msg-schemas.html', 'SSB-Msg-Schemas')}
+</ul>`
+
+module.exports['guides-how-to-use-pull-streams'] = (c) => `<ul class="nav">
+  ${item(c, '/guides/how-to-use-pull-streams/intro.html', 'Intro')}
+</ul>`
+
+module.exports['guides-lets-write-a-file-sharing-app'] = (c) => `<ul class="nav">
+  ${item(c, '/guides/lets-write-a-file-sharing-app/intro.html', 'Intro')}
+</ul>`
+
+module.exports['guides-lets-write-a-private-messaging-app'] = (c) => `<ul class="nav">
+  ${item(c, '/guides/lets-write-a-private-messaging-app/intro.html', 'Intro')}
+</ul>`
+
+module.exports['guides-lets-write-a-todo-list-app'] = (c) => `<ul class="nav">
+  ${item(c, '/guides/lets-write-a-todo-list-app/intro.html', 'Intro')}
 </ul>`
