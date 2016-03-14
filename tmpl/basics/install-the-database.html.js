@@ -1,3 +1,4 @@
+var com = require('../com.part')
 var page = require('../page.part')
 module.exports = () => page({
   tab: 'basics',
@@ -8,9 +9,9 @@ module.exports = () => page({
 // put content in a separate function so that index.html can reuse it
 module.exports.content = () => `
   <h2>Install the database</h2>
-  <code><pre>npm install -g scuttlebot</pre></code>
+  ${ com.code({ bash: `npm install -g scuttlebot` }) }
   <h2>Start the server</h2>
-  <code><pre>sbot server</pre></code>
+  ${ com.code({ bash: `sbot server` }) }
   <p><a class="cta" href="javascript:alert('TODO: This will popup to a youtube video demoing sbot install and usage, and then patchwork')">&#9654; See it in action</a></p>
 `
   // <h2>Autostart the server (OSX)</h2>

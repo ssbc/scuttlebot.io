@@ -1,4 +1,5 @@
-var fonts = require('./fonts.part.js')
+var fonts = require('./fonts.part')
+var com = require('./com.part')
 
 module.exports = () => `
 ${fonts.sourceCodePro()}
@@ -25,21 +26,6 @@ a {
 }
 a:hover {
   text-decoration: underline;
-}
-
-a.cta {
-  display: inline-block;
-  padding: 0.25em 0.75em;
-  background: #4E9121;
-  color: #fff;
-  font-size: 1.5em;
-  font-weight: 300;
-  border-radius: 3px;
-  margin: 1em 0;
-}
-a.cta:hover {
-  text-decoration: none;
-  background: #3E8111;
 }
 
 .hero {
@@ -129,6 +115,7 @@ a.cta:hover {
 }
 
 .content {
+  flex: 1;
   padding: 2em 1em 2em 2em;
 }
 .content > :first-child {
@@ -167,4 +154,6 @@ a.cta:hover {
 .footer-section a:hover {
   color: #555;
 }
+
+${ com() }
 `

@@ -2,6 +2,9 @@
     <head>
     <title>Scuttlebot.io</title>
     <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <script src="/js/prism.js"></script>
+    <script src="/js/code-examples.js"></script>
   </head>
     <body>
       <div class="hero small">
@@ -27,7 +30,21 @@
         <div class="content">
           
     <h2>Open a client</h2>
-    <p>todo</p>
+    <div class="code-examples">
+    <div class="head">
+      <div class="tab">js</div>
+    </div>
+    <div class="body">
+      <pre><code class="language-js">var ssbClient = require('ssb-client')
+ssbClient(function (err, ssb) {
+  if (err)
+    throw err
+
+  // ssb is now ready
+})</code></pre>
+    </div>
+  </div>
+    <p>See <a href="/modules/ssb-client.html">ssb-client API</a> for config options.</p>
   
         </div>
       </div>

@@ -10,19 +10,25 @@ var build = jetpack.cwd('build')
 // copy all other files
 tmpl.find('.', { matching: '*' }, 'inspect')
   .forEach(entry => {
-    if (entry.type == 'dir')
+    // console.log(entry)
+    if (entry.type == 'dir') {
       // copy folder structure
+      // console.log('copying directory')
       build.dir(entry.relativePath)
-    else if (entry.type == 'file') { 
-      if (entry.name.indexOf('.html.js') !== -1 || entry.name.indexOf('.css.js') !== -1)
+    } else if (entry.type == 'file') { 
+      if (entry.name.indexOf('.html.js') !== -1 || entry.name.indexOf('.css.js') !== -1) {
         // build html/css files
+        // console.log('building')
         buildTemplate(entry)
-      else if (entry.name.indexOf('.part.js') !== -1)
+      } else if (entry.name.indexOf('.part.js') !== -1) {
         // skip partials
+        // console.log('skipping')
         return
-      else
+      } else {
         // copy all others
-        jetpack.copy(entry.absolutePath, build.cwd(entry.relativePath))
+        // console.log('copying', entry.absolutePath, entry.relativePath)
+        jetpack.copy(entry.absolutePath, build.path(entry.relativePath), { overwrite: true })
+      }
     }
   })
 
