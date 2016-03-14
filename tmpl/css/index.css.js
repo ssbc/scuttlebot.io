@@ -31,6 +31,11 @@ a:hover {
   text-decoration: underline;
 }
 
+hr {
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
 .hero {
   width: 500px;
   margin: 0 auto;
