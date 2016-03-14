@@ -21,11 +21,11 @@
         <ul class="nav">
   <li ><a href="/basics/install-the-database.html" title="Install the database">Install the database</a></li>
   <li class="current"><a href="/basics/open-a-client.html" title="Open a client">Open a client</a></li>
-  <li ><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li ><a href="/basics/publish-a-message.html" title="Publish a message">Publish a message</a></li>
-  <li ><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
+  <li ><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li ><a href="/basics/publish-a-file.html" title="Publish a file">Publish a file</a></li>
   <li ><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
+  <li ><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
 </ul>
         <div class="content">
           
@@ -36,16 +36,16 @@
     </div>
     <div class="body">
       <pre><code class="language-js">var ssbClient = require('ssb-client')
-ssbClient(function (err, ssb) {
+ssbClient(function (err, sbot) {
   if (err)
     throw err
 
-  // ssb is now ready. when done:
-  ssb.close()
+  // sbot is now ready. when done:
+  sbot.close()
 })</code></pre>
     </div>
   </div>
-    <p class="next"><a href="/basics/read-the-log.html">Read the log</a></p>
+    <p class="next"><a href="/basics/publish-a-message.html">Publish a message</a></p>
     <ul class="see-also">
       <li><a href="/modules/ssb-client.html">SSB-Client API</a> for config options.</li>
     </ul>

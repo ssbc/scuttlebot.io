@@ -21,11 +21,11 @@
         <ul class="nav">
   <li ><a href="/basics/install-the-database.html" title="Install the database">Install the database</a></li>
   <li ><a href="/basics/open-a-client.html" title="Open a client">Open a client</a></li>
-  <li ><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li ><a href="/basics/publish-a-message.html" title="Publish a message">Publish a message</a></li>
-  <li ><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
+  <li ><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li class="current"><a href="/basics/publish-a-file.html" title="Publish a file">Publish a file</a></li>
   <li ><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
+  <li ><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
 </ul>
         <div class="content">
           
@@ -43,7 +43,7 @@
       <pre><code class="language-js">var pull = require('pull-stream')
 pull(
   pull.values('hello, world'),
-  ssb.blobs.add(function (err, hash) {
+  sbot.blobs.add(function (err, hash) {
     // 'hash' is the hash-id of the blob
   })
 )</code></pre><pre><code class="language-bash">$ echo "hello, world" | sbot blobs.add
@@ -62,7 +62,7 @@ var pull = require('pull-stream')
 var toPull = require('stream-to-pull-stream')
 pull(
   toPull.source(fs.createReadStream('./hello.txt')),
-  ssb.blobs.add(function (err, hash) {
+  sbot.blobs.add(function (err, hash) {
     // 'hash' is the hash-id of the blob
   })
 )</code></pre><pre><code class="language-bash">$ cat ./hello.txt | sbot blobs.add
@@ -77,7 +77,7 @@ pull(
       <div class="tab">js</div><div class="tab">bash</div>
     </div>
     <div class="body">
-      <pre><code class="language-js">ssb.publish({
+      <pre><code class="language-js">sbot.publish({
   type: 'post',
   text: 'checkout [this file!]('+hash+')',
   mentions: [{

@@ -7,7 +7,7 @@ module.exports = () => page({
   content: `
     <h2>Read the log</h2>
     ${ com.code({ js: jsSnippet, bash: bashSnippet }) }
-    <p class="next"><a href="/basics/publish-a-message.html">Publish a message</a></p>
+    <p class="next"><a href="/basics/publish-a-file.html">Publish a file</a></p>
     <ul class="see-also">
       <li><a href="/modules/scuttlebot.html"><code>createLogStream()</code> API</a></li>
       <li><a href="/advanced/advanced-queries.html">Advanced queries</a></li>
@@ -19,7 +19,7 @@ module.exports = () => page({
 var jsSnippet = `
 var pull = require('pull-stream')
 pull(
-  ssb.createLogStream({ limit: 100 }),
+  sbot.createLogStream({ limit: 100 }),
   pull.collect(err, msgs) {
     if (err)
       throw err

@@ -10,7 +10,7 @@ module.exports = () => page({
 var ssbClient = require('ssb-client')
 
 // simplest usage, connect to localhost sbot
-ssbClient(function (err, sbot) {
+ssbClient(function (err, ssb) {
   // ...
 })
 
@@ -24,7 +24,7 @@ ssbClient(
     port: 8008,        // optional, defaults to 8008
     key: keys.id       // optional, defaults to keys.id
   },
-  function (err, sbot) {
+  function (err, ssb) {
     // ...
   }
 )` }) }

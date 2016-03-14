@@ -19,7 +19,7 @@ module.exports = () => page({
     <h2>Read a file to disk</h2>
     ${ com.code({ js: jsSnippet3, bash: bashSnippet3 }) }
 
-    <p class="next"><a href="/social/social-network.html">Social network</a></p>
+    <p class="next"><a href="/basics/encryption.html">Encryption</a></p>
     <ul class="see-also">
       <li><a href="/modules/scuttlebot-blobs.html">Scuttlebot.Blobs API</a></li>
       <li><a href="/advanced/linking-messages.html">Linking messages</a></li>
@@ -30,19 +30,19 @@ module.exports = () => page({
 
 var jsSnippet1 = `
 // want will not cb() until the file arrives
-ssb.blobs.want(hash, function (err) {
+sbot.blobs.want(hash, function (err) {
   // ready to read
 })
 `
 
 var bashSnippet1 = `
-$ sbot.blobs.want "&hT/5N2Kgbdv3...XYCA=.sha256"
+$ sbot blobs.want "&hT/5N2Kgbdv3...XYCA=.sha256"
 `
 
 var jsSnippet2 = `
 var pull = require('pull-stream')
 pull(
-  ssb.blobs.get(hash),
+  sbot.blobs.get(hash),
   pull.collect(function (err, values) {
     // eg values.join('') == 'hello, world'
   })
@@ -59,7 +59,7 @@ var fs = require('fs')
 var pull = require('pull-stream')
 var toPull = require('stream-to-pull-stream')
 pull(
-  ssb.blobs.get(hash),
+  sbot.blobs.get(hash),
   toPull.sink(fs.createWriteStream('./hello.txt'), cb)
 )
 `

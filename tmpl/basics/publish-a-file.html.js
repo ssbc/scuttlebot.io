@@ -33,7 +33,7 @@ var jsSnippet1 = `
 var pull = require('pull-stream')
 pull(
   pull.values('hello, world'),
-  ssb.blobs.add(function (err, hash) {
+  sbot.blobs.add(function (err, hash) {
     // 'hash' is the hash-id of the blob
   })
 )
@@ -50,7 +50,7 @@ var pull = require('pull-stream')
 var toPull = require('stream-to-pull-stream')
 pull(
   toPull.source(fs.createReadStream('./hello.txt')),
-  ssb.blobs.add(function (err, hash) {
+  sbot.blobs.add(function (err, hash) {
     // 'hash' is the hash-id of the blob
   })
 )
@@ -62,7 +62,7 @@ $ cat ./hello.txt | sbot blobs.add
 `
 
 var jsSnippet3 = `
-ssb.publish({
+sbot.publish({
   type: 'post',
   text: 'checkout [this file!]('+hash+')',
   mentions: [{

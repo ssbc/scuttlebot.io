@@ -7,7 +7,7 @@ module.exports = () => page({
   content: `
     <h2>Publish a message</h2>
     ${ com.code({ js: jsSnippet, bash: bashSnippet }) }
-    <p class="next"><a href="/basics/encryption.html">Encryption</a></p>
+    <p class="next"><a href="/basics/read-the-log.html">Read the log</a></p>
     <ul class="see-also">
       <li><a href="/advanced/message-schemas.html">Message schemas</a></li>
       <li><a href="/advanced/linking-messages.html">Linking messages</a></li>
@@ -16,7 +16,7 @@ module.exports = () => page({
 })
 
 var jsSnippet = `
-ssb.publish({
+sbot.publish({
   type: 'post',
   text: 'Hello, world!'
 }, function (err, msg) {

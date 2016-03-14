@@ -11,7 +11,7 @@ module.exports = () => page({
     ${ com.code({ js: jsSnippet2 })}
     <h2>Is a message encrypted?</h2>
     ${ com.code({ js: jsSnippet3 })}
-    <p class="next"><a href="/basics/publish-a-file.html">Publish a file</a></p>
+    <p class="next"><a href="/social/social-network.html">Social network</a></p>
     <ul class="see-also">
       <li><a href="/advanced/private-box.html">Private Box</a></li>
       <li><a href="/advanced/linking-messages.html">Linking messages</a></li>
@@ -20,7 +20,7 @@ module.exports = () => page({
 })
 
 var jsSnippet1 = `
-ssb.private.publish(
+sbot.private.publish(
   // message:
   {
     type: 'post',
@@ -40,7 +40,7 @@ ssb.private.publish(
 `
 
 var jsSnippet2 = `
-ssb.private.unbox(
+sbot.private.unbox(
   privateMsg.value.content,
   function (err, content) {
     // 'content' is now an object

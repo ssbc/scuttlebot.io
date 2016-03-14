@@ -7,7 +7,7 @@ module.exports = () => page({
   content: `
     <h2>Open a client</h2>
     ${ com.code({ js: jsSnippet }) }
-    <p class="next"><a href="/basics/read-the-log.html">Read the log</a></p>
+    <p class="next"><a href="/basics/publish-a-message.html">Publish a message</a></p>
     <ul class="see-also">
       <li><a href="/modules/ssb-client.html">SSB-Client API</a> for config options.</li>
     </ul>
@@ -16,10 +16,10 @@ module.exports = () => page({
 
 var jsSnippet = `
 var ssbClient = require('ssb-client')
-ssbClient(function (err, ssb) {
+ssbClient(function (err, sbot) {
   if (err)
     throw err
 
-  // ssb is now ready. when done:
-  ssb.close()
+  // sbot is now ready. when done:
+  sbot.close()
 })`

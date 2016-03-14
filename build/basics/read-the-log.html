@@ -21,11 +21,11 @@
         <ul class="nav">
   <li ><a href="/basics/install-the-database.html" title="Install the database">Install the database</a></li>
   <li ><a href="/basics/open-a-client.html" title="Open a client">Open a client</a></li>
-  <li class="current"><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li ><a href="/basics/publish-a-message.html" title="Publish a message">Publish a message</a></li>
-  <li ><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
+  <li class="current"><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li ><a href="/basics/publish-a-file.html" title="Publish a file">Publish a file</a></li>
   <li ><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
+  <li ><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
 </ul>
         <div class="content">
           
@@ -37,7 +37,7 @@
     <div class="body">
       <pre><code class="language-js">var pull = require('pull-stream')
 pull(
-  ssb.createLogStream({ limit: 100 }),
+  sbot.createLogStream({ limit: 100 }),
   pull.collect(err, msgs) {
     if (err)
       throw err
@@ -46,7 +46,7 @@ pull(
 )</code></pre><pre><code class="language-bash">sbot log --limit 100</code></pre>
     </div>
   </div>
-    <p class="next"><a href="/basics/publish-a-message.html">Publish a message</a></p>
+    <p class="next"><a href="/basics/publish-a-file.html">Publish a file</a></p>
     <ul class="see-also">
       <li><a href="/modules/scuttlebot.html"><code>createLogStream()</code> API</a></li>
       <li><a href="/advanced/advanced-queries.html">Advanced queries</a></li>

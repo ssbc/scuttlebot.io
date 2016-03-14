@@ -21,11 +21,11 @@
         <ul class="nav">
   <li ><a href="/basics/install-the-database.html" title="Install the database">Install the database</a></li>
   <li ><a href="/basics/open-a-client.html" title="Open a client">Open a client</a></li>
-  <li ><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li ><a href="/basics/publish-a-message.html" title="Publish a message">Publish a message</a></li>
-  <li ><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
+  <li ><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li ><a href="/basics/publish-a-file.html" title="Publish a file">Publish a file</a></li>
   <li class="current"><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
+  <li ><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
 </ul>
         <div class="content">
           
@@ -41,9 +41,9 @@
     </div>
     <div class="body">
       <pre><code class="language-js">// want will not cb() until the file arrives
-ssb.blobs.want(hash, function (err) {
+sbot.blobs.want(hash, function (err) {
   // ready to read
-})</code></pre><pre><code class="language-bash">$ sbot.blobs.want "&hT/5N2Kgbdv3...XYCA=.sha256"</code></pre>
+})</code></pre><pre><code class="language-bash">$ sbot blobs.want "&hT/5N2Kgbdv3...XYCA=.sha256"</code></pre>
     </div>
   </div>
 
@@ -55,7 +55,7 @@ ssb.blobs.want(hash, function (err) {
     <div class="body">
       <pre><code class="language-js">var pull = require('pull-stream')
 pull(
-  ssb.blobs.get(hash),
+  sbot.blobs.get(hash),
   pull.collect(function (err, values) {
     // eg values.join('') == 'hello, world'
   })
@@ -74,13 +74,13 @@ hello, world</code></pre>
 var pull = require('pull-stream')
 var toPull = require('stream-to-pull-stream')
 pull(
-  ssb.blobs.get(hash),
+  sbot.blobs.get(hash),
   toPull.sink(fs.createWriteStream('./hello.txt'), cb)
 )</code></pre><pre><code class="language-bash">$ sbot blobs.get "&hT/5N2Kgbdv3...XYCA=.sha256" > ./hello.txt</code></pre>
     </div>
   </div>
 
-    <p class="next"><a href="/social/social-network.html">Social network</a></p>
+    <p class="next"><a href="/basics/encryption.html">Encryption</a></p>
     <ul class="see-also">
       <li><a href="/modules/scuttlebot-blobs.html">Scuttlebot.Blobs API</a></li>
       <li><a href="/advanced/linking-messages.html">Linking messages</a></li>

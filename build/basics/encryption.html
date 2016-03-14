@@ -21,11 +21,11 @@
         <ul class="nav">
   <li ><a href="/basics/install-the-database.html" title="Install the database">Install the database</a></li>
   <li ><a href="/basics/open-a-client.html" title="Open a client">Open a client</a></li>
-  <li ><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li ><a href="/basics/publish-a-message.html" title="Publish a message">Publish a message</a></li>
-  <li class="current"><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
+  <li ><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
   <li ><a href="/basics/publish-a-file.html" title="Publish a file">Publish a file</a></li>
   <li ><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
+  <li class="current"><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
 </ul>
         <div class="content">
           
@@ -35,7 +35,7 @@
       <div class="tab">js</div>
     </div>
     <div class="body">
-      <pre><code class="language-js">ssb.private.publish(
+      <pre><code class="language-js">sbot.private.publish(
   // message:
   {
     type: 'post',
@@ -60,7 +60,7 @@
       <div class="tab">js</div>
     </div>
     <div class="body">
-      <pre><code class="language-js">ssb.private.unbox(
+      <pre><code class="language-js">sbot.private.unbox(
   privateMsg.value.content,
   function (err, content) {
     // 'content' is now an object
@@ -83,7 +83,7 @@ function isEncrypted (msg) {
 }</code></pre>
     </div>
   </div>
-    <p class="next"><a href="/basics/publish-a-file.html">Publish a file</a></p>
+    <p class="next"><a href="/social/social-network.html">Social network</a></p>
     <ul class="see-also">
       <li><a href="/advanced/private-box.html">Private Box</a></li>
       <li><a href="/advanced/linking-messages.html">Linking messages</a></li>
