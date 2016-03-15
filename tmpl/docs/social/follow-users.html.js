@@ -27,23 +27,23 @@ module.exports = () => page({
 var jsSnippet1 = `
 sbot.publish({
   type: 'contact',
-  contact: feedId,
+  contact: userId,
   following: true 
 }, cb)
 `
 
 var bashSnippet1 = `
-sbot publish --type contact --contact {feedId} --following
+sbot publish --type contact --contact {userId} --following
 `
 
 var jsSnippet2 = `
 sbot.publish({
   type: 'contact',
-  contact: feedId,
+  contact: userId,
   following: false
 }, cb)
 `
 
 var bashSnippet2 = `
-sbot publish --type contact --contact {feedId} --no-following
+sbot publish --type contact --contact {userId} --no-following
 `

@@ -37,19 +37,19 @@ module.exports = () => page({
 var jsSnippet1 = `
 sbot.publish({
   type: 'about',
-  about: feedId,
+  about: userId,
   name: name
 }, cb)
 `
 
 var bashSnippet1 = `
-sbot publish --type about --about {feedId} --name {name}
+sbot publish --type about --about {userId} --name {name}
 `
 
 var jsSnippet2 = `
 sbot.publish({
   type: 'about',
-  about: feedId,
+  about: userId,
   image: {
     link: hash,         // required
     width: widthInPx,   // optional, but recommended
@@ -62,5 +62,5 @@ sbot.publish({
 `
 
 var bashSnippet2 = `
-sbot publish --type contact --contact {feedId} --no-following
+sbot publish --type contact --contact {userId} --no-following
 `

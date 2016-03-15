@@ -140,12 +140,12 @@ module.exports = () => page({
     <p>(hist) Fetch messages from a specific user, ordered by sequence numbers.</p>
     ${ com.code({
       js: `createHistoryStream({ id:, seq:, live: })`,
-      bash: `hist {feedid} [seq] [live]`
+      bash: `hist {userId} [seq] [live]`
     }) }
     <p><code>createHistoryStream</code> and <code>createUserStream</code> serve the same purpose.
     <code>createHistoryStream</code> exists as a separate call because it provides fewer range parameters, which makes it safer for RPC between untrusted peers.</p>
     <ul>
-    <li><code>id</code> (FeedID, required): The id of the feed to fetch.</li>
+    <li><code>id</code> (userId, required): The id of the feed to fetch.</li>
     <li><code>seq</code> (number, default: <code>0</code>): If <code>seq &gt; 0</code>, then only stream messages with sequence numbers greater than <code>seq</code>.</li>
     <li><code>live</code> (boolean, default: <code>false</code>): Keep the stream open and emit new messages as they are received.</li>
     </ul>
@@ -165,7 +165,7 @@ module.exports = () => page({
   limit:
 })`,
       bash: `createUserStream 
-  --id {feedid}
+  --id {userId}
   [--live]
   [--gt index]
   [--gte index]
@@ -180,7 +180,7 @@ module.exports = () => page({
     <code>createHistoryStream</code> exists as a separate call because it provides fewer range parameters, which makes it safer for RPC between untrusted peers.</p>
     <p>The range queries (gt, gte, lt, lte) filter against the sequence number.</p>
     <ul>
-    <li><code>id</code> (FeedID, required): The id of the feed to fetch.</li>
+    <li><code>id</code> (userId, required): The id of the feed to fetch.</li>
     <li><code>live</code> (boolean, default: <code>false</code>): Keep the stream open and emit new messages as they are received.</li>
     <li><code>gt</code> (greater than), <code>gte</code> (greater than or equal) define the lower bound of the range to be streamed. Only records where the key is greater than (or equal to) this option will be included in the range. When <code>reverse=true</code> the order will be reversed, but the records streamed will be the same.</li>
     <li><code>lt</code> (less than), <code>lte</code> (less than or equal) define the higher bound of the range to be streamed. Only key/value pairs where the key is less than (or equal to) this option will be included in the range. When <code>reverse=true</code> the order will be reversed, but the records streamed will be the same.</li>
@@ -264,7 +264,7 @@ module.exports = () => page({
       bash: `cat ./message.json | add`
     }) }
     <ul>
-    <li><code>author</code> (FeedID): Public key of the author of the message.</li>
+    <li><code>author</code> (userId): Public key of the author of the message.</li>
     <li><code>sequence</code> (number): Sequence number of the message. (Starts from 1.)</li>
     <li><code>previous</code> (MsgID): Hash-id of the previous message in the feed (null for seq=1).</li>
     <li><code>timestamp</code> (number): Unix timestamp for the publish time.</li>
@@ -295,10 +295,10 @@ module.exports = () => page({
       bash: `getAddress`
     }) }
     <h2 id="getlatest-async">getLatest: async</h2>
-    <p>Get the latest message in the database by the given feedid.</p>
+    <p>Get the latest message in the database by the given userId.</p>
     ${ com.code({
       js: `getLatest(id, cb)`,
-      bash: `getLatest {feedid}`
+      bash: `getLatest {userId}`
     }) }
     <h2 id="latest-source">latest: source</h2>
     <p>Get the seq numbers of the latest messages of all users in the database.</p>
@@ -308,10 +308,10 @@ module.exports = () => page({
     }) }
     <h2 id="latestsequence-async">latestSequence: async</h2>
     <p>Get the sequence and local timestamp of the last received message from
-    a given <code>feedId</code>.</p>
+    a given <code>userId</code>.</p>
     ${ com.code({
-      js: `latestSequence({feedId})`,
-      bash: `latestSequence {feedId}`
+      js: `latestSequence({userId})`,
+      bash: `latestSequence {userId}`
     }) }
     <h2 id="whoami-sync">whoami: sync</h2>
     <p>Get information about the current sbot user.</p>
@@ -320,6 +320,6 @@ module.exports = () => page({
       bash: `whoami`
     }) }
     <p>Outputs information in the following form:</p>
-    <pre><code>{ id: FeedID }</code></pre>
+    <pre><code>{ id: userId }</code></pre>
 `
 })
