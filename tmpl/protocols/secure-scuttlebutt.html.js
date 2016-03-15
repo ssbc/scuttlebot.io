@@ -1,30 +1,10 @@
-<html>
-    <head>
-    <title>Scuttlebot.io</title>
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/prism.css">
-    <script src="/js/prism.js"></script>
-    <script src="/js/code-examples.js"></script>
-  </head>
-    <body>
-      <div class="hero small">
-      <h1><a href="/"><img src="/img/hermies-256.png"></a> Scuttlebot</h1>
-    </div>
-      <div class="tabs">
-  <div ><a href="/basics/install-the-database.html" title="Basics">Basics</a></div>
-  <div ><a href="/social/social-network.html" title="Social">Social</a></div>
-  <div ><a href="/advanced/writing-applications.html" title="Advanced">Advanced</a></div>
-  <div class="current"><a href="/whitepapers/secure-scuttlebutt.html" title="Whitepapers">Whitepapers</a></div>
-  <div ><a href="/modules/ssb-client.html" title="Modules">Modules</a></div>
-</div>
-      <div class="nav-content-unit">
-        <ul class="nav">
-  <li class="current"><a href="/whitepapers/secure-scuttlebutt.html" title="Secure Scuttlebutt">Secure Scuttlebutt</a></li>
-  <li ><a href="/whitepapers/secret-handshake.html" title="Secret Handshake">Secret Handshake</a></li>
-  <li ><a href="/whitepapers/private-box.html" title="Private Box">Private Box</a></li>
-</ul>
-        <div class="content">
-          
+var page = require('../page.part')
+var com = require('../com.part')
+
+module.exports = () => page({
+  tab: 'protocols',
+  path: '/protocols/secure-scuttlebutt.html',
+  content: `
     <h2>Secure Scuttlebutt</h2>
     <p>Secure Scuttlebutt is a database protocol for unforgeable append-only message feeds.</p>
     <p>
@@ -32,9 +12,7 @@
       This property makes Secure Scuttlebutt useful for peer-to-peer applications.
       Secure Scuttlebutt also makes it easy to encrypt messages.
     </p>
-    <p>
-      <em>The SSB whitepaper has not been completed yet. In the meantime, this page will cover all basic information.</em>
-    </p>
+
     <hr>
 
     <h2 id="concepts">Concepts</h2>
@@ -73,12 +51,7 @@
       <li>A content object</li>
     </ul>
     <p>Here&#39;s an example message:</p>
-    <div class="code-examples">
-    <div class="head">
-      <div class="tab">js</div>
-    </div>
-    <div class="body">
-      <pre><code class="language-js">{
+    ${ com.code({ js: `{
   "previous": "%26AC+gU0t74jRGVeDY01...MnutGGHM=.sha256",
   "author": "@hxGxqPrplLjRG2vtjQL87...0nNwE=.ed25519",
   "sequence": 216,
@@ -92,9 +65,7 @@
     }
   },
   "signature": "Sjq1C3yiKdmi1TWvNqxI...gmAQ==.sig.ed25519"
-}</code></pre>
-    </div>
-  </div>
+}` }) }
 
     <h3 id="entity-references-links-">Entity References (Links)</h3>
     <p>
@@ -170,33 +141,9 @@
       This ensures the append-only constraint, and thus safe network convergence.
     </p>
 
-    <p class="next"><a href="/whitepapers/secret-handshake.html">Secret Handshake</a></p>
+    <p class="next"><a href="/protocols/secret-handshake.html">Secret Handshake</a></p>
     <ul class="see-also">
       <li><a href="/social/social-network.html">Social Network</a></li>
     </ul>
-  
-        </div>
-      </div>
-      <div class="footer">
-  <ul class="footer-section">
-    <li>Guides</li>
-    <li ><a href="/guides/lets-write-a-todo-list-app/intro.html" title="Let's Write: a Todo-List app">Let's Write: a Todo-List app</a></li>
-    <li ><a href="/guides/lets-write-a-private-messaging-app/intro.html" title="Let's Write: a Private Messaging app">Let's Write: a Private Messaging app</a></li>
-    <li ><a href="/guides/lets-write-a-file-sharing-app/intro.html" title="Let's Write: a File-Sharing app">Let's Write: a File-Sharing app</a></li>
-    <li ><a href="/guides/how-to-use-pull-streams/intro.html" title="How to use Pull Streams">How to use Pull Streams</a></li>
-  </ul>
-  <ul class="footer-section">
-    <li>Applications</li>
-    <li><a href="https://github.com/ssbc/patchwork" title="Patchwork">Patchwork</a>
-    <li><a href="https://github.com/ssbc/ssb-blessed-dashboard" title="CLI Dashboard">CLI Dashboard</a>
-    <li><a href="https://github.com/ssbc/ssb-example-pm" title="CLI Private Msg">CLI Private Msg</a>
-  </ul>
-  <ul class="footer-section">
-    <li>Community</li>
-    <li><p>#scuttlebutt on freenode</p></li>
-    <li><a href="https://github.com/ssbc">GitHub Org</a></li>
-    <li><a href="https://github.com/ssbc/scuttlebot">GitHub Repo</a></li>
-  </ul>
-</div>
-    </body>
-  </html>
+  `
+})

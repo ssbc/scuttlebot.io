@@ -9,6 +9,6 @@ module.exports = (c) => `<div class="tabs">
   ${item(c, 'basics', '/basics/install-the-database.html', 'Basics')}
   ${item(c, 'social', '/social/social-network.html', 'Social')}
   ${item(c, 'advanced', '/advanced/writing-applications.html', 'Advanced')}
-  ${item(c, 'whitepapers', '/whitepapers/secure-scuttlebutt.html', 'Whitepapers')}
+  ${item(c, 'protocols', '/protocols/secure-scuttlebutt.html', 'Protocols')}
   ${item(c, 'modules', '/modules/ssb-client.html', 'Modules')}
 </div>`

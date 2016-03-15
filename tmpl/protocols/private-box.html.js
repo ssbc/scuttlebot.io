@@ -2,16 +2,13 @@ var page = require('../page.part')
 var com = require('../com.part')
 
 module.exports = () => page({
-  tab: 'whitepapers',
-  path: '/whitepapers/private-box.html',
+  tab: 'protocols',
+  path: '/protocols/private-box.html',
   content: `
     <h2>Private Box</h2>
     <p>
       Private-box is a format for encrypting a private message to many parties.
       You can <strong><a href="https://github.com/auditdrivencrypto/private-box">find the repository on GitHub</a></strong>.
-    </p>
-    <p>
-      <em>The Private Box whitepaper has not been completed yet. In the meantime, this page will cover all basic information.</em>
     </p>
 
     <h2 id="properties">Properties</h2>

@@ -36,10 +36,10 @@ module.exports.advanced = (c) => `<ul class="nav">
   ${item(c, '/advanced/configure-scuttlebot.html', 'Configure Scuttlebot')}
 </ul>`
 
-module.exports.whitepapers = (c) => `<ul class="nav">
-  ${item(c, '/whitepapers/secure-scuttlebutt.html', 'Secure Scuttlebutt')}
-  ${item(c, '/whitepapers/secret-handshake.html', 'Secret Handshake')}
-  ${item(c, '/whitepapers/private-box.html', 'Private Box')}
+module.exports.protocols = (c) => `<ul class="nav">
+  ${item(c, '/protocols/secure-scuttlebutt.html', 'Secure Scuttlebutt')}
+  ${item(c, '/protocols/secret-handshake.html', 'Secret Handshake')}
+  ${item(c, '/protocols/private-box.html', 'Private Box')}
 </ul>`
 
 module.exports.modules = (c) => `<ul class="nav">

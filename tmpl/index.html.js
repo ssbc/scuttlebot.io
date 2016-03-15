@@ -23,7 +23,7 @@ module.exports = () => page({
         <br>
         Users are identified by public keys, and follow each other socially to form a web-of-trust.
         Peers do not have to be trusted, and can share logs and files on behalf of other peers.
-        <a href="/whitepapers/secure-scuttlebutt.html">Read the whitepaper.</a>
+        <a href="/protocols/secure-scuttlebutt.html">Read about the protocol.</a>
       </p>
     </div>
   `,
