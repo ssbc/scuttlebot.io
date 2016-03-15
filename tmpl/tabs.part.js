@@ -5,10 +5,40 @@ function item (current, name, path, label) {
   return `<div ${cls}><a href="${path}" title="${label}">${label}</a></div>`
 }
 
-module.exports = (c) => `<div class="tabs">
+module.exports.sections = (c) => `<div class="tabs big">
+  ${item(c, 'docs', '/docs/basics/install-the-database.html', 'Docs')}
+  ${item(c, 'apis', '/apis/scuttlebot/ssb.html', 'APIs')}
+  ${item(c, 'apps', '/apps/patchwork.html', 'Apps')}
+  ${item(c, 'guides', '/guides/what-can-you-build-with-sbot/intro.html', 'Guides')}
+</div>`
+
+module.exports.docs = (c) => `<div class="tabs small">
+  ${item(c, 'docs-basics', '/docs/basics/install-the-database.html', 'Basics')}
+  ${item(c, 'docs-social', '/docs/social/follow-users.html', 'Social')}
+  ${item(c, 'docs-message-types', '/docs/message-types/post.html', 'Message Types')}
+  ${item(c, 'docs-advanced', '/docs/advanced/message-schemas.html', 'Advanced')}
+  ${item(c, 'docs-config', '/docs/config/configure-scuttlebot.html', 'Config')}
+</div>`
+
+module.exports.apis = (c) => `<div class="tabs small">
+  ${item(c, 'apis-scuttlebot', '/apis/scuttlebot/ssb.html', 'Scuttlebot')}
+  ${item(c, 'apis-common', '/apis/common/ssb-client.html', 'Common Modules')}
+  ${item(c, 'apis-internal', '/apis/internal/muxrpc.html', 'Internal Modules')}
+  ${item(c, 'apis-community', '/apis/community/ssbify.html', 'Community Modules')}
+</div>`
+
+module.exports.apps = (c) => `<div class="tabs small">
   ${item(c, 'basics', '/basics/install-the-database.html', 'Basics')}
   ${item(c, 'social', '/social/social-network.html', 'Social')}
+  ${item(c, 'messages', '/messages/post.html', 'Message Types')}
   ${item(c, 'advanced', '/advanced/writing-applications.html', 'Advanced')}
   ${item(c, 'protocols', '/protocols/secure-scuttlebutt.html', 'Protocols')}
-  ${item(c, 'modules', '/modules/ssb-client.html', 'Modules')}
+</div>`
+
+module.exports.guides = (c) => `<div class="tabs small">
+  ${item(c, 'basics', '/basics/install-the-database.html', 'Basics')}
+  ${item(c, 'social', '/social/social-network.html', 'Social')}
+  ${item(c, 'messages', '/messages/post.html', 'Message Types')}
+  ${item(c, 'advanced', '/advanced/writing-applications.html', 'Advanced')}
+  ${item(c, 'protocols', '/protocols/secure-scuttlebutt.html', 'Protocols')}
 </div>`

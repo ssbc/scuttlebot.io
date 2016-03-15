@@ -45,35 +45,6 @@ hr {
   box-sizing: border-box;
 }
 
-.nav {
-  background: #fafafa;
-  flex: 0 0 210px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-right: 1px solid #ccc;
-}
-.nav li {
-  margin: 0.5em;
-  border-bottom: 1px solid #ddd;
-}
-.nav li.current:before {
-  content: '\\2022';
-  padding-left: 0.5em;
-}
-.nav li:last-child {
-  border-bottom: 0
-}
-.nav li a {
-  display: inline-block;
-  color: #555;
-  padding: 0.5em 0.5em 1em 0.5em;
-  text-decoration: none;
-}
-.nav li a:hover {
-  color: #999;
-}
-
 .content {
   flex: 1;
   padding: 2em 1em 2em 2em;
@@ -118,5 +89,6 @@ hr {
 ${ require('./com.part')() }
 ${ require('./hero.part')() }
 ${ require('./tabs.part')() }
+${ require('./nav.part')() }
 ${ require('./columns.part')() }
 `

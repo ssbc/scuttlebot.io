@@ -13,37 +13,43 @@
       <h1>Scuttlebot<br><small>a social p2p database<br>for cloud-free apps</small></h1>
       <p>
         <a class="cta" href="javascript:alert('TODO: This will popup to a youtube video demoing sbot install and usage, and then patchwork')">&#9654; See it in action</a>
-        <a class="cta dark" href="/basics/install-the-database.html"><small>&#11015;</small> Download now</a>
+        <a class="cta dark" href="/docs/basics/install-the-database.html"><small>&#11015;</small> Download now</a>
       </p>
       <p class="description">
         Scuttlebot is an open source <strong>peer-to-peer log store</strong> used as a database, identity provider, and messaging system.
         It features global replication, file-syncronization, and end-to-end encryption.<br>
         <br>
-        Scuttlebot behaves like any <a href="http://kappa-architecture.com">Kappa Architecture</a> DB.
-        Applications read and write freely to the local instance, and, in the background, the database syncs with known peers.<br>
+        Scuttlebot behaves like the <a href="https://stackoverflow.com/questions/4647719/what-does-headless-mean?rq=1">headless backend</a> to a social network.
+        Localhosted frontend applications read and write freely to the local instance, and, in the background, the database syncs with known peers.<br>
         <br>
-        Users are identified by public keys, and follow each other socially to form a web-of-trust.
+        Users are identified by public keys, and follow each other to form a web-of-trust.
         Peers do not have to be trusted, and can share logs and files on behalf of other peers.
         <a href="/protocols/secure-scuttlebutt.html">Read about the protocol.</a>
       </p>
     </div>
   
-      <div class="tabs">
-  <div class="current"><a href="/basics/install-the-database.html" title="Basics">Basics</a></div>
-  <div ><a href="/social/social-network.html" title="Social">Social</a></div>
-  <div ><a href="/advanced/writing-applications.html" title="Advanced">Advanced</a></div>
-  <div ><a href="/protocols/secure-scuttlebutt.html" title="Protocols">Protocols</a></div>
-  <div ><a href="/modules/ssb-client.html" title="Modules">Modules</a></div>
+      <div class="tabs big">
+  <div class="current"><a href="/docs/basics/install-the-database.html" title="Docs">Docs</a></div>
+  <div ><a href="/apis/scuttlebot/ssb.html" title="APIs">APIs</a></div>
+  <div ><a href="/apps/patchwork.html" title="Apps">Apps</a></div>
+  <div ><a href="/guides/what-can-you-build-with-sbot/intro.html" title="Guides">Guides</a></div>
+</div>
+      <div class="tabs small">
+  <div class="current"><a href="/docs/basics/install-the-database.html" title="Basics">Basics</a></div>
+  <div ><a href="/docs/social/follow-users.html" title="Social">Social</a></div>
+  <div ><a href="/docs/message-types/post.html" title="Message Types">Message Types</a></div>
+  <div ><a href="/docs/advanced/message-schemas.html" title="Advanced">Advanced</a></div>
+  <div ><a href="/docs/config/configure-scuttlebot.html" title="Config">Config</a></div>
 </div>
       <div class="nav-content-unit">
         <ul class="nav">
-  <li class="current"><a href="/basics/install-the-database.html" title="Install the database">Install the database</a></li>
-  <li ><a href="/basics/open-a-client.html" title="Open a client">Open a client</a></li>
-  <li ><a href="/basics/publish-a-message.html" title="Publish a message">Publish a message</a></li>
-  <li ><a href="/basics/read-the-log.html" title="Read the log">Read the log</a></li>
-  <li ><a href="/basics/publish-a-file.html" title="Publish a file">Publish a file</a></li>
-  <li ><a href="/basics/read-a-file.html" title="Read a file">Read a file</a></li>
-  <li ><a href="/basics/encryption.html" title="Encryption">Encryption</a></li>
+  <li class="current"><a href="/docs/basics/install-the-database.html" title="Install the database">Install the database</a></li>
+  <li ><a href="/docs/basics/open-a-client.html" title="Open a client">Open a client</a></li>
+  <li ><a href="/docs/basics/publish-a-message.html" title="Publish a message">Publish a message</a></li>
+  <li ><a href="/docs/basics/read-the-log.html" title="Read the log">Read the log</a></li>
+  <li ><a href="/docs/basics/publish-a-file.html" title="Publish a file">Publish a file</a></li>
+  <li ><a href="/docs/basics/read-a-file.html" title="Read a file">Read a file</a></li>
+  <li ><a href="/docs/basics/encryption.html" title="Encryption">Encryption</a></li>
 </ul>
         <div class="content">
           
@@ -65,7 +71,7 @@
       <pre><code class="language-bash">sbot server</code></pre>
     </div>
   </div>
-  <p class="next"><a href="/basics/open-a-client.html">Open a client</a></p>
+  <p class="next"><a href="/docs/basics/open-a-client.html">Open a client</a></p>
 
         </div>
       </div>

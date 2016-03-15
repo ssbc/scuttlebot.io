@@ -1,0 +1,120 @@
+<html>
+    <head>
+    <title>Scuttlebot.io</title>
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/prism.css">
+    <script src="/js/prism.js"></script>
+    <script src="/js/code-examples.js"></script>
+  </head>
+    <body>
+      <div class="hero small">
+      <h1><a href="/"><img src="/img/hermies-256.png"></a> Scuttlebot</h1>
+    </div>
+      <div class="tabs big">
+  <div class="current"><a href="/docs/basics/install-the-database.html" title="Docs">Docs</a></div>
+  <div ><a href="/apis/scuttlebot/ssb.html" title="APIs">APIs</a></div>
+  <div ><a href="/apps/patchwork.html" title="Apps">Apps</a></div>
+  <div ><a href="/guides/what-can-you-build-with-sbot/intro.html" title="Guides">Guides</a></div>
+</div>
+      <div class="tabs small">
+  <div class="current"><a href="/docs/basics/install-the-database.html" title="Basics">Basics</a></div>
+  <div ><a href="/docs/social/follow-users.html" title="Social">Social</a></div>
+  <div ><a href="/docs/message-types/post.html" title="Message Types">Message Types</a></div>
+  <div ><a href="/docs/advanced/message-schemas.html" title="Advanced">Advanced</a></div>
+  <div ><a href="/docs/config/configure-scuttlebot.html" title="Config">Config</a></div>
+</div>
+      <div class="nav-content-unit">
+        <ul class="nav">
+  <li ><a href="/docs/basics/install-the-database.html" title="Install the database">Install the database</a></li>
+  <li ><a href="/docs/basics/open-a-client.html" title="Open a client">Open a client</a></li>
+  <li ><a href="/docs/basics/publish-a-message.html" title="Publish a message">Publish a message</a></li>
+  <li ><a href="/docs/basics/read-the-log.html" title="Read the log">Read the log</a></li>
+  <li ><a href="/docs/basics/publish-a-file.html" title="Publish a file">Publish a file</a></li>
+  <li class="current"><a href="/docs/basics/read-a-file.html" title="Read a file">Read a file</a></li>
+  <li ><a href="/docs/basics/encryption.html" title="Encryption">Encryption</a></li>
+</ul>
+        <div class="content">
+          
+    <p>
+      When Scuttlebot finds the hash-ID of a file in a message, it will request its contents from the network.
+      You can then read the file from the blobstore.
+    </p>
+
+    <h2>Wait for the file to arrive</h2>
+    <div class="code-examples">
+    <div class="head">
+      <div class="tab">js</div><div class="tab">bash</div>
+    </div>
+    <div class="body">
+      <pre><code class="language-js">// want will not cb() until the file arrives
+sbot.blobs.want(hash, function (err) {
+  // ready to read
+})</code></pre><pre><code class="language-bash">$ sbot blobs.want "&hT/5N2Kgbdv3...XYCA=.sha256"</code></pre>
+    </div>
+  </div>
+
+    <h2>Read a file to memory</h2>
+    <div class="code-examples">
+    <div class="head">
+      <div class="tab">js</div><div class="tab">bash</div>
+    </div>
+    <div class="body">
+      <pre><code class="language-js">var pull = require('pull-stream')
+pull(
+  sbot.blobs.get(hash),
+  pull.collect(function (err, values) {
+    // eg values.join('') == 'hello, world'
+  })
+)</code></pre><pre><code class="language-bash">$ sbot blobs.get "&hT/5N2Kgbdv3...XYCA=.sha256"
+hello, world</code></pre>
+    </div>
+  </div>
+    
+    <h2>Read a file to disk</h2>
+    <div class="code-examples">
+    <div class="head">
+      <div class="tab">js</div><div class="tab">bash</div>
+    </div>
+    <div class="body">
+      <pre><code class="language-js">var fs = require('fs')
+var pull = require('pull-stream')
+var toPull = require('stream-to-pull-stream')
+pull(
+  sbot.blobs.get(hash),
+  toPull.sink(fs.createWriteStream('./hello.txt'), cb)
+)</code></pre><pre><code class="language-bash">$ sbot blobs.get "&hT/5N2Kgbdv3...XYCA=.sha256" > ./hello.txt</code></pre>
+    </div>
+  </div>
+
+    <p class="next"><a href="/docs/basics/encryption.html">Encryption</a></p>
+    <ul class="see-also">
+      <li><a href="/modules/scuttlebot-blobs.html">Scuttlebot.Blobs API</a></li>
+      <li><a href="/advanced/linking-messages.html">Linking messages</a></li>
+      <li><a href="/advanced/pull-streams.html">Pull streams</a></li>
+    </ul>
+  
+        </div>
+      </div>
+      <div class="footer">
+  <ul class="footer-section">
+    <li>Guides</li>
+    <li ><a href="/guides/lets-write-a-todo-list-app/intro.html" title="Let's Write: a Todo-List app">Let's Write: a Todo-List app</a></li>
+    <li ><a href="/guides/lets-write-a-private-messaging-app/intro.html" title="Let's Write: a Private Messaging app">Let's Write: a Private Messaging app</a></li>
+    <li ><a href="/guides/lets-write-a-file-sharing-app/intro.html" title="Let's Write: a File-Sharing app">Let's Write: a File-Sharing app</a></li>
+    <li ><a href="/guides/how-to-use-pull-streams/intro.html" title="How to use Pull Streams">How to use Pull Streams</a></li>
+  </ul>
+  <ul class="footer-section">
+    <li>Applications</li>
+    <li><a href="https://github.com/ssbc/patchwork" title="Patchwork">Patchwork</a>
+    <li><a href="https://github.com/ssbc/ssb-blessed-dashboard" title="CLI Dashboard">CLI Dashboard</a>
+    <li><a href="https://github.com/ssbc/ssb-example-pm" title="CLI Private Msg">CLI Private Msg</a>
+  </ul>
+  <ul class="footer-section">
+    <li>Community</li>
+    <li><p>#scuttlebutt on freenode</p></li>
+    <li><a href="https://github.com/ssbc">GitHub Org</a></li>
+    <li><a href="https://github.com/ssbc/scuttlebot">GitHub Repo</a></li>
+  </ul>
+</div>
+    </body>
+  </html>

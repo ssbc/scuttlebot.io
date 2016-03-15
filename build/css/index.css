@@ -191,35 +191,6 @@ hr {
   box-sizing: border-box;
 }
 
-.nav {
-  background: #fafafa;
-  flex: 0 0 210px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  border-right: 1px solid #ccc;
-}
-.nav li {
-  margin: 0.5em;
-  border-bottom: 1px solid #ddd;
-}
-.nav li.current:before {
-  content: '\2022';
-  padding-left: 0.5em;
-}
-.nav li:last-child {
-  border-bottom: 0
-}
-.nav li a {
-  display: inline-block;
-  color: #555;
-  padding: 0.5em 0.5em 1em 0.5em;
-  text-decoration: none;
-}
-.nav li a:hover {
-  color: #999;
-}
-
 .content {
   flex: 1;
   padding: 2em 1em 2em 2em;
@@ -369,14 +340,27 @@ a.cta.dark {
   margin: 0 auto;
   box-sizing: border-box;
 }
+.tabs.big {
+  margin-bottom: 1em;
+}
+
 .tabs > div {
   position: relative;
   flex: 1;
   text-align: center;
 }
-.tabs > div:last-child {
-  border: 0;
+.tabs.big > div {
+  border: 1px solid #ccc;
+  border-right: 0;
+  background: #F9F7F6;
 }
+.tabs.big > div:last-child {
+  border-right: 1px solid #ccc;
+}
+.tabs.big > div.current {
+  background: #fff;
+}
+
 .tabs > div a {
   display: inline-block;
   font-weight: 300;
@@ -384,16 +368,50 @@ a.cta.dark {
   padding: 0.4em 1.2em ;
   text-decoration: none;
 }
+.tabs.big > div a {
+  display: block;
+  font-size: 2em;
+  color: gray;
+}
 .tabs > div.current a {
   color: #444;
 }
-.tabs > div.current a:before {
+.tabs.small > div.current a:before {
   content: '\25b6 ';
-
   margin-right: 5px;
 }
 .tabs > div a:hover {
   color: #333;
+}
+
+
+.nav {
+  flex: 0 0 210px;
+  background: #F9F7F6;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-right: 1px solid #ccc;
+}
+.nav li {
+  padding: 0.5em;
+  border-bottom: 1px solid #ddd;
+}
+.nav li.current {
+  background: #fff;
+}
+.nav li.current:before {
+  content: '\2022';
+  padding-left: 0.5em;
+}
+.nav li a {
+  display: inline-block;
+  color: #555;
+  padding: 0.5em;
+  text-decoration: none;
+}
+.nav li a:hover {
+  color: #999;
 }
 
 

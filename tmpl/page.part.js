@@ -15,7 +15,8 @@ module.exports = (opts) => {
     </div>`
   }
 
-  // pick the nav
+  // pick the navs
+  var tabFn = tabs[opts.section || 'docs']
   var leftnavFn = leftnav[opts.tab || 'basics']
 
   // render the page
@@ -23,7 +24,8 @@ module.exports = (opts) => {
     ${head()}
     <body>
       ${hero}
-      ${tabs(opts.tab)}
+      ${tabs.sections(opts.section)}
+      ${tabFn(opts.tab)}
       <div class="nav-content-unit">
         ${leftnavFn(opts.path)}
         <div class="content">
