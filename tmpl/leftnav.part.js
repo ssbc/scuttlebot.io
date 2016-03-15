@@ -56,14 +56,25 @@ module.exports['apis-scuttlebot'] = (c) => `<ul class="nav">
   ${item(c, '/apis/scuttlebot/replicate.html', 'Replicate')}
 </ul>`
 
-module.exports['apis-common'] = (c) => `<ul class="nav">
-  ${item(c, '/apis/common/ssb-client.html', 'SSB-Client')}
-  ${item(c, '/apis/common/ssb-feed.html', 'SSB-Feed')}
-  ${item(c, '/apis/common/ssb-keys.html', 'SSB-Keys')}
-  ${item(c, '/apis/common/ssb-ref.html', 'SSB-Ref')}
-  ${item(c, '/apis/common/ssb-msgs.html', 'SSB-Msgs')}
-  ${item(c, '/apis/common/ssb-msg-schemas.html', 'SSB-Msg-Schemas')}
+module.exports['apis-modules'] = (c) => `<ul class="nav">
+  ${item(c, '/apis/modules/ssb-client.html', 'SSB-Client')}
+  ${item(c, '/apis/modules/ssb-feed.html', 'SSB-Feed')}
+  ${item(c, '/apis/modules/ssb-keys.html', 'SSB-Keys')}
+  ${item(c, '/apis/modules/ssb-ref.html', 'SSB-Ref')}
+  ${item(c, '/apis/modules/ssb-msgs.html', 'SSB-Msgs')}
+  ${item(c, '/apis/modules/ssb-msg-schemas.html', 'SSB-Msg-Schemas')}
+  ${item(c, '/apis/modules/ssb-config.html', 'SSB-Config')}
+  ${item(c, '/apis/modules/secret-stack.html', 'Secret-Stack')}
+  ${item(c, '/apis/modules/muxrpc.html', 'MuxRPC')}
+  ${item(c, '/apis/modules/muxrpcli.html', 'MuxRPCCli')}
+  ${item(c, '/apis/modules/mdmanifest.html', 'MDManifest')}
+  ${item(c, '/apis/modules/graphmitter.html', 'Graphmitter')}
 </ul>`
+
+module.exports['apis-pull-stream'] = (c) => `<ul class="nav">
+  ${item(c, '/apis/pull-stream/pull-stream.html', 'Pull-Stream')}
+  ${item(c, '/apis/pull-stream/pull-ws-server.html', 'Pull-WS-Server')}
+`
 
 module.exports['guides-concepts'] = (c) => `<ul class="nav">
   ${item(c, '/guides/concepts/intro.html', 'Intro')}

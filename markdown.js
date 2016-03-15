@@ -38,6 +38,8 @@ function findCodeGroupings (ast) {
       }
     }
   })
+  if (groupStart)
+    groups.push([groupStart, groupStart+1])
   return groups
 }
 

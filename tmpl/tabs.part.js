@@ -22,9 +22,9 @@ module.exports.docs = (c) => `<div class="tabs small">
 
 module.exports.apis = (c) => `<div class="tabs small">
   ${item(c, 'apis-scuttlebot', '/apis/scuttlebot/ssb.html', 'Scuttlebot')}
-  ${item(c, 'apis-common', '/apis/common/ssb-client.html', 'Common Modules')}
-  ${item(c, 'apis-internal', '/apis/internal/muxrpc.html', 'Internal Modules')}
-  ${item(c, 'apis-community', '/apis/community/ssbify.html', 'Community Modules')}
+  ${item(c, 'apis-modules', '/apis/modules/ssb-client.html', 'Modules')}
+  ${item(c, 'apis-pull-stream', '/apis/pull-stream/ssb-client.html', 'Pull Stream')}
+  ${item(c, 'apis-community', '/apis/community/ssbify.html', 'Community')}
 </div>`
 
 module.exports.apps = (c) => `<div class="tabs small">
