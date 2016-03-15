@@ -48,6 +48,7 @@ module.exports['docs-config'] = (c) => `<ul class="nav">
 module.exports['apis-scuttlebot'] = (c) => `<ul class="nav">
   ${item(c, '/apis/scuttlebot/ssb.html', 'SSB')}
   ${item(c, '/apis/scuttlebot/blobs.html', 'Blobs')}
+  ${item(c, '/apis/scuttlebot/block.html', 'Block')}
   ${item(c, '/apis/scuttlebot/friends.html', 'Friends')}
   ${item(c, '/apis/scuttlebot/gossip.html', 'Gossip')}
   ${item(c, '/apis/scuttlebot/invite.html', 'Invite')}
