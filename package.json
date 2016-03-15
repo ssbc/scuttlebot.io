@@ -13,5 +13,9 @@
   "devDependencies": {
     "fs-jetpack": "^0.7.2",
     "nodemon": "^1.9.1"
+  },
+  "dependencies": {
+    "remark": "^4.1.2",
+    "remark-html": "^3.0.0"
   }
 }

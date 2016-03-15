@@ -12,14 +12,15 @@ module.exports = () => `
   border-bottom: 1px solid #ddd;
 }
 .nav li.current {
+  display: flex;
   background: #fff;
 }
 .nav li.current:before {
   content: '\\2022';
-  padding-left: 0.5em;
+  padding: 0.5em 0 0.5em 0.5em;
 }
 .nav li a {
-  display: inline-block;
+  display: block;
   color: #555;
   padding: 0.5em;
   text-decoration: none;
