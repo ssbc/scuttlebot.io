@@ -32,10 +32,10 @@ module.exports['docs-message-types'] = (c) => `<ul class="nav">
 </ul>`
 
 module.exports['docs-advanced'] = (c) => `<ul class="nav">
-  ${item(c, '/docs/advanced/message-schemas.html', 'Message schemas')}
-  ${item(c, '/docs/advanced/linking-messages.html', 'Linking messages')}
   ${item(c, '/docs/advanced/advanced-queries.html', 'Advanced queries')}
   ${item(c, '/docs/advanced/pull-streams.html', 'Pull streams')}
+  ${item(c, '/docs/advanced/message-schemas.html', 'Message schemas')}
+  ${item(c, '/docs/advanced/linking-messages.html', 'Linking messages')}
   ${item(c, '/docs/advanced/crdts.html', 'CRDTs')}
 </ul>`
 
@@ -60,7 +60,7 @@ module.exports['apis-common'] = (c) => `<ul class="nav">
   ${item(c, '/apis/common/ssb-client.html', 'SSB-Client')}
   ${item(c, '/apis/common/ssb-feed.html', 'SSB-Feed')}
   ${item(c, '/apis/common/ssb-keys.html', 'SSB-Keys')}
-  ${item(c, '/apis/common/ssb-refs.html', 'SSB-Refs')}
+  ${item(c, '/apis/common/ssb-ref.html', 'SSB-Ref')}
   ${item(c, '/apis/common/ssb-msgs.html', 'SSB-Msgs')}
   ${item(c, '/apis/common/ssb-msg-schemas.html', 'SSB-Msg-Schemas')}
 </ul>`

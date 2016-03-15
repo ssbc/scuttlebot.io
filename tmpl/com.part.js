@@ -13,11 +13,9 @@ module.exports.code = examples => {
 
 // enforce an order to the language tabs
 function langPrioritySort (a, b) {
-  if (b == 'js')
+  if (b == 'js' && a != 'js')
     return 1
-  if (b == 'bash')
-    return 1
-  return 0
+  return -1
 }
 
 // do some cleanup on the code

@@ -49,10 +49,10 @@ function createCodeExamples (ast, groups) {
     var len = end - start
     ast.children.splice(start-offset, len, {
       type: 'codeExamples',
-      children: ast.children.slice(start-offset, end-offset),
+      children: ast.children.slice(start-offset, start-offset+len),
       position: false // TODO - what is this?
     })
-    offset += group.length - 1
+    offset += len - 1
   })
 }
 
