@@ -20,6 +20,7 @@ module.exports['docs-social'] = (c) => `<ul class="nav">
   ${item(c, '/docs/social/query-the-social-graph.html', 'Query the social graph')}
   ${item(c, '/docs/social/update-your-profile.html', 'Update your profile')}
   ${item(c, '/docs/social/view-a-profile.html', 'View a profile')}
+  ${item(c, '/docs/social/create-new-users.html', 'Create new users')}
   ${item(c, '/docs/social/join-a-pub.html', 'Join a Pub')}
   ${item(c, '/docs/social/create-a-pub.html', 'Create a Pub')}
 </ul>`
@@ -48,8 +49,8 @@ module.exports['docs-advanced'] = (c) => `<ul class="nav">
 
 module.exports['docs-config'] = (c) => `<ul class="nav">
   ${item(c, '/docs/config/configure-scuttlebot.html', 'Configure Scuttlebot')}
-  ${item(c, '/docs/config/creating-test-users.html', 'Creating test users')}
   ${item(c, '/docs/config/creating-test-databases.html', 'Creating test databases')}
+  ${item(c, '/docs/config/creating-test-users.html', 'Creating test users')}
 </ul>`
 
 module.exports['apis-scuttlebot'] = (c) => `<ul class="nav">

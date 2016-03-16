@@ -8,5 +8,5 @@ module.exports = () => page({
   seeAlso: [
     ['/docs/message-types/about.html', 'About messages']
   ],
-  next: ['/docs/social/join-a-pub.html', 'Join a pub']
+  next: ['/docs/social/create-new-users.html', 'Create new users']
 })
