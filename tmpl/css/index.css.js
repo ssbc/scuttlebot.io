@@ -13,6 +13,19 @@ h1 small {
   font-weight: 300;
 }
 
+.anchor {
+  visibility: hidden;
+  margin-left: -23px;
+  padding: 0 3px;
+}
+h1:hover .anchor,
+h2:hover .anchor,
+h3:hover .anchor,
+h4:hover .anchor,
+h5:hover .anchor {
+  visibility: visible;
+} 
+
 code, pre {
   font-family: 'Source Code Pro', monospace;
 }
