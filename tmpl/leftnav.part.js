@@ -63,6 +63,7 @@ module.exports['apis-modules'] = (c) => `<ul class="nav">
   ${item(c, '/apis/modules/ssb-ref.html', 'SSB-Ref')}
   ${item(c, '/apis/modules/ssb-msgs.html', 'SSB-Msgs')}
   ${item(c, '/apis/modules/ssb-msg-schemas.html', 'SSB-Msg-Schemas')}
+  ${item(c, '/apis/modules/ssb-markdown.html', 'SSB-Markdown')}
   ${item(c, '/apis/modules/ssb-config.html', 'SSB-Config')}
   ${item(c, '/apis/modules/secret-stack.html', 'Secret-Stack')}
   ${item(c, '/apis/modules/muxrpc.html', 'MuxRPC')}
@@ -87,6 +88,13 @@ module.exports['apis-pull-stream'] = (c) => `<ul class="nav">
   ${item(c, '/apis/pull-stream/pull-window.html', 'Pull-Window')}
   ${item(c, '/apis/pull-stream/pull-otherwise.html', 'Pull-Otherwise')}
   ${item(c, '/apis/pull-stream/pull-ws-server.html', 'Pull-WS-Server')}
+</ul>`
+
+module.exports['apis-community'] = (c) => `<ul class="nav">
+  ${item(c, '/apis/community/ssbify.html', 'SSBify')}
+  ${item(c, '/apis/community/git-ssb.html', 'Git-SSB')}
+  ${item(c, '/apis/community/ssb-notifier.html', 'SSB-Notifier')}
+  ${item(c, '/apis/community/patchwork-threads.html', 'Patchwork-Threads')}
 </ul>`
 
 module.exports['guides-concepts'] = (c) => `<ul class="nav">
