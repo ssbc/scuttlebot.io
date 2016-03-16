@@ -25,7 +25,7 @@ module.exports = () => page({
     </p>
     ${ com.code({ js: jsSnippet2, bash: bashSnippet2 }) }
 
-    <p class="next"><a href="/docs/social/join-a-pub.html">Join a pub</a></p>
+    <p class="next"><a href="/docs/social/view-a-profile.html">View a profile</a></p>
     <ul class="see-also">
       <li><a href="/docs/basics/publish-a-file.html">Publish a file</a></li>
       <li><a href="/advanced/message-schemas.html">Message schemas</a></li>

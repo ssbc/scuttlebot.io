@@ -19,6 +19,7 @@ module.exports['docs-social'] = (c) => `<ul class="nav">
   ${item(c, '/docs/social/follow-users.html', 'Follow users')}
   ${item(c, '/docs/social/query-the-social-graph.html', 'Query the social graph')}
   ${item(c, '/docs/social/update-your-profile.html', 'Update your profile')}
+  ${item(c, '/docs/social/view-a-profile.html', 'View a profile')}
   ${item(c, '/docs/social/join-a-pub.html', 'Join a Pub')}
   ${item(c, '/docs/social/create-a-pub.html', 'Create a Pub')}
 </ul>`
@@ -33,10 +34,16 @@ module.exports['docs-message-types'] = (c) => `<ul class="nav">
 </ul>`
 
 module.exports['docs-advanced'] = (c) => `<ul class="nav">
-  ${item(c, '/docs/advanced/advanced-queries.html', 'Advanced queries')}
-  ${item(c, '/docs/advanced/message-schemas.html', 'Message schemas')}
-  ${item(c, '/docs/advanced/linking-messages.html', 'Linking messages')}
-  ${item(c, '/docs/advanced/crdts.html', 'CRDTs')}
+  ${item(c, '/docs/advanced/links.html', 'Links')}
+  ${item(c, '/docs/advanced/feed-send-time-sort.html', 'Feed (send time sort)')}
+  ${item(c, '/docs/advanced/feed-receive-time-sort.html', 'Feed (receive time sort)')}
+  ${item(c, '/docs/advanced/messages-by-type.html', 'Messages by type')}
+  ${item(c, '/docs/advanced/messages-by-user.html', 'Messages by user')}
+  ${item(c, '/docs/advanced/watch-for-messages.html', 'Watch for messages')}
+  ${item(c, '/docs/advanced/votes-on-a-message.html', 'Votes on a message')}
+  ${item(c, '/docs/advanced/user-files.html', 'User files')}
+  ${item(c, '/docs/advanced/links-between-users.html', 'Links between users')}
+  ${item(c, '/docs/advanced/post-threads.html', 'Post threads')}
 </ul>`
 
 module.exports['docs-config'] = (c) => `<ul class="nav">

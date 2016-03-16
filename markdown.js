@@ -70,7 +70,7 @@ function findCodeGroupings (ast) {
     }
   })
   if (groupStart)
-    groups.push([groupStart, groupStart+1])
+    groups.push([groupStart, ast.children.length])
   return groups
 }
 
