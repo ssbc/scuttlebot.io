@@ -29,11 +29,11 @@ module.exports['docs-message-types'] = (c) => `<ul class="nav">
   ${item(c, '/docs/message-types/contact.html', 'Contact')}
   ${item(c, '/docs/message-types/vote.html', 'Vote')}
   ${item(c, '/docs/message-types/pub.html', 'Pub')}
+  ${item(c, '/docs/message-types/custom-types.html', 'Custom Types')}
 </ul>`
 
 module.exports['docs-advanced'] = (c) => `<ul class="nav">
   ${item(c, '/docs/advanced/advanced-queries.html', 'Advanced queries')}
-  ${item(c, '/docs/advanced/pull-streams.html', 'Pull streams')}
   ${item(c, '/docs/advanced/message-schemas.html', 'Message schemas')}
   ${item(c, '/docs/advanced/linking-messages.html', 'Linking messages')}
   ${item(c, '/docs/advanced/crdts.html', 'CRDTs')}

@@ -19,6 +19,13 @@ module.exports = (opts) => {
   var tabFn = tabs[opts.section || 'docs']
   var leftnavFn = leftnav[opts.tab || 'basics']
 
+  // next and see-also
+  var seeAlso = '', next = ''
+  if (opts.seeAlso)
+    seeAlso = `<ul class="see-also">` + opts.seeAlso.map(item => `<li><a href="${item[0]}">${item[1]}</a></li>`).join('') + `</ul>`
+  if (opts.next)
+    next = `<p class="next"><a href="${opts.next[0]}">${opts.next[1]}</a></p>`
+
   // render the page
   return `<html>
     ${head()}
@@ -30,6 +37,8 @@ module.exports = (opts) => {
         ${leftnavFn(opts.path)}
         <div class="content">
           ${opts.content}
+          ${seeAlso}
+          ${next}
         </div>
       </div>
       ${footer(opts.path)}

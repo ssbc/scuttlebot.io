@@ -22,6 +22,11 @@ pre {
 pre code {
   white-space: pre-wrap;
 }
+code {
+  background: #eee;
+  padding: 0 0.5em;
+  font-size: 0.9em;
+}
 
 p {
   line-height: 1.5;
