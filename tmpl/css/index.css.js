@@ -19,6 +19,9 @@ code, pre {
 pre {
   font-size: 14px;
 }
+pre code {
+  white-space: pre-wrap;
+}
 
 p {
   line-height: 1.5;
@@ -46,6 +49,7 @@ hr {
 }
 
 .content {
+  max-width: 540px;
   flex: 1;
   padding: 2em 1em 2em 2em;
 }

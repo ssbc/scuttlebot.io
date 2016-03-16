@@ -43,6 +43,9 @@ a.cta.dark {
   padding: 0.25em 0.25em 0;
 }
 
+.code-examples {
+  max-width: 540px;
+}
 .code-examples .head {
   display: flex;
   color: #333;

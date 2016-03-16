@@ -23,7 +23,7 @@ module.exports.docs = (c) => `<div class="tabs small">
 module.exports.apis = (c) => `<div class="tabs small">
   ${item(c, 'apis-scuttlebot', '/apis/scuttlebot/ssb.html', 'Scuttlebot')}
   ${item(c, 'apis-modules', '/apis/modules/ssb-client.html', 'Modules')}
-  ${item(c, 'apis-pull-stream', '/apis/pull-stream/ssb-client.html', 'Pull Stream')}
+  ${item(c, 'apis-pull-stream', '/apis/pull-stream/pull-stream.html', 'Pull Stream')}
   ${item(c, 'apis-community', '/apis/community/ssbify.html', 'Community')}
 </div>`
 

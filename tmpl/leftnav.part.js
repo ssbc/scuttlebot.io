@@ -73,8 +73,21 @@ module.exports['apis-modules'] = (c) => `<ul class="nav">
 
 module.exports['apis-pull-stream'] = (c) => `<ul class="nav">
   ${item(c, '/apis/pull-stream/pull-stream.html', 'Pull-Stream')}
+  ${item(c, '/apis/pull-stream/core-sources.html', 'Source Functions')}
+  ${item(c, '/apis/pull-stream/core-throughs.html', 'Through Functions')}
+  ${item(c, '/apis/pull-stream/core-sinks.html', 'Sink Functions')}
+  ${item(c, '/apis/pull-stream/pull-stream-to-stream.html', 'Pull-Stream-to-Stream')}
+  ${item(c, '/apis/pull-stream/stream-to-pull-stream.html', 'Stream-to-Pull-Stream')}
+  ${item(c, '/apis/pull-stream/pull-paramap.html', 'Pull-Paramap')}
+  ${item(c, '/apis/pull-stream/pull-cat.html', 'Pull-Cat')}
+  ${item(c, '/apis/pull-stream/pull-pushable.html', 'Pull-Pushable')}
+  ${item(c, '/apis/pull-stream/pull-notify.html', 'Pull-Notify')}
+  ${item(c, '/apis/pull-stream/pull-pause.html', 'Pull-Pause')}
+  ${item(c, '/apis/pull-stream/pull-timeout.html', 'Pull-Timeout')}
+  ${item(c, '/apis/pull-stream/pull-window.html', 'Pull-Window')}
+  ${item(c, '/apis/pull-stream/pull-otherwise.html', 'Pull-Otherwise')}
   ${item(c, '/apis/pull-stream/pull-ws-server.html', 'Pull-WS-Server')}
-`
+</ul>`
 
 module.exports['guides-concepts'] = (c) => `<ul class="nav">
   ${item(c, '/guides/concepts/intro.html', 'Intro')}
