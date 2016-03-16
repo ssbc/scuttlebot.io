@@ -28,21 +28,28 @@ h5:hover .anchor {
 
 code, pre {
   font-family: 'Source Code Pro', monospace;
+  background: #F5F2F0;
+  border-radius: 2px;
 }
 pre {
   font-size: 14px;
+  padding: 0.5em;
+}
+code {
+  color: #555;
+  padding: 0 0.5em;
+  font-size: 0.9em;
 }
 pre code {
   white-space: pre-wrap;
-}
-code {
-  background: #eee;
-  padding: 0 0.5em;
-  font-size: 0.9em;
+  padding: 0;
 }
 
 p {
   line-height: 1.5;
+}
+ul p {
+  margin: 0;
 }
 
 a {
