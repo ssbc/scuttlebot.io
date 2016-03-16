@@ -1,4 +1,4 @@
-## Get messages by timestamp, from newest to oldest
+## Messages ordered by timestamp
 
 ```js
 var pull = require('pull-stream')
@@ -18,7 +18,7 @@ The "feed" stream should only be used when order is not important.
 
 ---
 
-## Get messages by receive-time, from newest to oldest
+## Messages ordered by receive-time
 
 ```js
 var pull = require('pull-stream')
@@ -38,7 +38,7 @@ The "log" stream's order will never be the same between two devices.
 
 ---
 
-## Get post-messages by receive-time
+## Messages by type
 
 ```js
 var pull = require('pull-stream')
@@ -57,7 +57,7 @@ The ordering in `messagesByType` will be the same as the ordering in `createLogS
 
 ---
 
-## Get all messages from a user
+## Messages by user
 
 ```js
 var pull = require('pull-stream')
@@ -76,7 +76,24 @@ The order of messages in an individual user's feed will be the same for all devi
 
 ---
 
-## Watch for new messages from a user
+## Watch for new messages
+
+```js
+var pull = require('pull-stream')
+pull(
+  sbot.createLogStream({ live: true }),
+  pull.drain(function (msg) { ... })
+)
+```
+```bash
+sbot log --live
+```
+
+[&rarr; createLogStream API](/apis/scuttlebot/ssb.html#createlogstream-source)
+
+---
+
+## Watch for new messages by a user
 
 ```js
 var pull = require('pull-stream')
@@ -95,24 +112,7 @@ Notice that `pull.drain` is used instead of `pull.collect`, so that new messages
 
 ---
 
-## Watch for new messages from anybody
-
-```js
-var pull = require('pull-stream')
-pull(
-  sbot.createLogStream({ live: true }),
-  pull.drain(function (msg) { ... })
-)
-```
-```bash
-sbot log --live
-```
-
-[&rarr; createLogStream API](/apis/scuttlebot/ssb.html#createlogstream-source)
-
----
-
-## Get all about messages for a user
+## About-user messages
 
 ```js
 var pull = require('pull-stream')
@@ -132,7 +132,7 @@ That's why `values: true` is set.
 
 ---
 
-## Get all votes on a message
+## Votes on a message
 
 ```js
 var pull = require('pull-stream')
@@ -152,7 +152,7 @@ That's why `values: true` is not set.
 
 ---
 
-## Get all files referenced by a user
+## Files referenced by a user
 
 ```js
 var pull = require('pull-stream')
@@ -165,11 +165,16 @@ pull(
 sbot links --source {userId} --dest &
 ```
 
+All IDs have a "sigil" character defining what type of object the ID references.
+(Blobs start with "&", users start with "@", and messages start with "%").
+
+In `links`, you can use the sigil to filter the source or dest by the ID type.
+
 [&rarr; links API](/apis/scuttlebot/ssb.html#links-source)
 
 ---
 
-## Get all links from one user to another
+## Links from one user to another
 
 ```js
 var pull = require('pull-stream')
@@ -186,7 +191,7 @@ sbot links --source {userId1} --dest {userId2}
 
 ---
 
-## Get a full post-thread
+## Full post-thread
 
 ```js
 sbot.relatedMessages({ id: messageId }, function (err, thread) {

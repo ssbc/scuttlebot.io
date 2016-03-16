@@ -11,5 +11,6 @@ module.exports = (opts) => {
     <link rel="stylesheet" href="/css/prism.css">
     <script src="/js/prism.js"></script>
     <script src="/js/code-examples.js"></script>
+    <script src="/js/table-of-contents.js"></script>
   </head>`
 }

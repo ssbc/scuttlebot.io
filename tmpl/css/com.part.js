@@ -78,4 +78,26 @@ a.cta.dark {
 .code-examples pre.current {
   display: block;
 }
+
+.table-of-contents ul {
+  display: none;
+  list-style: none;
+}
+.table-of-contents.expanded ul {
+  display: block;
+  padding: 0;
+  margin: 0;
+}
+.table-of-contents ul li:nth-child(even) {
+  background: #fafafa;
+}
+.table-of-contents ul li:hover {
+  background: #eee;
+}
+.table-of-contents ul li a {
+  display: block;
+  padding: 0.5em;
+  color: #555;
+  text-decoration: none;
+}
 `

@@ -16,8 +16,30 @@ module.exports.doc = function (path) {
       template: linkSvg
     })
     .use(html)
+    .use(injectTOC)
     .use(transformCodeExamples)
     .process(text)
+}
+
+// find all h2s and create a dropdown table-of-contents
+function injectTOC (remark, options) {
+  remark.Compiler.prototype.visitors.tableOfContents = renderTOC
+  return ast => {
+    var headings = ast.children.filter(node => node.type == 'heading' && node.depth == 2)
+    if (headings.length > 2)
+      createTOC(ast, headings)
+    return ast
+  }  
+}
+
+// add the tableOfContents node to the ast
+function createTOC (ast, headings) {
+  ast.children.unshift({ type: 'tableOfContents', children: headings })
+}
+
+// render the tableOfContents widget
+function renderTOC (node, root) {
+  return com.tableOfContents(node.children)
 }
 
 // find any <code> sections and group them together into our code-examples component
@@ -61,14 +83,14 @@ function createCodeExamples (ast, groups) {
     ast.children.splice(start-offset, len, {
       type: 'codeExamples',
       children: ast.children.slice(start-offset, start-offset+len),
-      position: false // TODO - what is this?
+      position: false // TODO - needed? doesnt look like it
     })
     offset += len - 1
   })
 }
 
 // convert from AST to html
-function renderCodeExamples (node, ast) {
+function renderCodeExamples (node, root) {
   var codes = {}
   node.children.forEach(node => {
     if (node.type == 'code' && !!node.lang)
