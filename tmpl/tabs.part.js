@@ -29,7 +29,7 @@ module.exports.apis = (c) => `<div class="tabs small">
 
 module.exports.guides = (c) => `<div class="tabs small">
   ${item(c, 'guides-protocols', '/guides/protocols/secure-scuttlebutt.html', 'Protocols')}
-  ${item(c, 'guides-social-feed=app', '/social/social-network.html', 'Social Feed App')}
-  ${item(c, 'private messaging app', '/messages/post.html', 'Private Messaging App')}
-  ${item(c, 'todo list app', '/advanced/writing-applications.html', 'Todo List App')}
+  ${item(c, 'guides-social-feed-app', '/guides/social-feed-app/intro.html', 'Social Feed App')}
+  ${item(c, 'guides-private-messaging-app', '/guides/private-messaging-app/intro.html', 'Private Messaging App')}
+  ${item(c, 'guides-todo-list-app', '/guides/todo-list-app/intro.html', 'Todo List App')}
 </div>`

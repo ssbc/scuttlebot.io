@@ -111,18 +111,14 @@ module.exports['guides-protocols'] = (c) => `<ul class="nav">
   ${item(c, '/guides/protocols/private-box.html', 'Private Box')}
 </ul>`
 
-module.exports['guides-how-to-use-pull-streams'] = (c) => `<ul class="nav">
-  ${item(c, '/guides/how-to-use-pull-streams/intro.html', 'Intro')}
+module.exports['guides-social-feed-app'] = (c) => `<ul class="nav">
+  ${item(c, '/guides/social-feed-app/intro.html', 'Intro')}
 </ul>`
 
-module.exports['guides-lets-write-a-file-sharing-app'] = (c) => `<ul class="nav">
-  ${item(c, '/guides/lets-write-a-file-sharing-app/intro.html', 'Intro')}
+module.exports['guides-private-messaging-app'] = (c) => `<ul class="nav">
+  ${item(c, '/guides/private-messaging-app/intro.html', 'Intro')}
 </ul>`
 
-module.exports['guides-lets-write-a-private-messaging-app'] = (c) => `<ul class="nav">
-  ${item(c, '/guides/lets-write-a-private-messaging-app/intro.html', 'Intro')}
-</ul>`
-
-module.exports['guides-lets-write-a-todo-list-app'] = (c) => `<ul class="nav">
-  ${item(c, '/guides/lets-write-a-todo-list-app/intro.html', 'Intro')}
+module.exports['guides-todo-list-app'] = (c) => `<ul class="nav">
+  ${item(c, '/guides/todo-list-app/intro.html', 'Intro')}
 </ul>`
