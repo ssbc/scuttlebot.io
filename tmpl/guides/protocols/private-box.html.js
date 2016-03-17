@@ -3,8 +3,8 @@ var com = require('../../com.part')
 
 module.exports = () => page({
   section: 'guides',
-  tab: 'guides-concepts',
-  path: '/protocols/private-box.html',
+  tab: 'guides-protocols',
+  path: '/guides/protocols/private-box.html',
   content: `
     <h2>Private Box</h2>
     <p>
@@ -184,7 +184,5 @@ function decrypt (cyphertext, secretKey) {
   // to the owner of secretKey
   return undefined
 }` }) }
-
-    <p class="next"><a href="/modules/ssb-client.html">SSB-Client</a></p>
   `
 })

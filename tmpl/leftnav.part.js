@@ -105,8 +105,10 @@ module.exports['apis-community'] = (c) => `<ul class="nav">
   ${item(c, '/apis/community/patchwork-threads.html', 'Patchwork-Threads')}
 </ul>`
 
-module.exports['guides-concepts'] = (c) => `<ul class="nav">
-  ${item(c, '/guides/concepts/intro.html', 'Intro')}
+module.exports['guides-protocols'] = (c) => `<ul class="nav">
+  ${item(c, '/guides/protocols/secure-scuttlebutt.html', 'Secure Scuttlebutt')}
+  ${item(c, '/guides/protocols/secret-handshake.html', 'Secret Handshake')}
+  ${item(c, '/guides/protocols/private-box.html', 'Private Box')}
 </ul>`
 
 module.exports['guides-how-to-use-pull-streams'] = (c) => `<ul class="nav">

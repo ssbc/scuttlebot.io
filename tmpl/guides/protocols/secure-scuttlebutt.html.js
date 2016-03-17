@@ -2,9 +2,9 @@ var page = require('../../page.part')
 var com = require('../../com.part')
 
 module.exports = () => page({
-  section: 'docs',
-  tab: 'guides-concepts',
-  path: '/protocols/secure-scuttlebutt.html',
+  section: 'guides',
+  tab: 'guides-protocols',
+  path: '/guides/protocols/secure-scuttlebutt.html',
   content: `
     <h2>Secure Scuttlebutt</h2>
     <p>Secure Scuttlebutt is a database protocol for unforgeable append-only message feeds.</p>
@@ -141,10 +141,6 @@ module.exports = () => page({
       The <code>previous</code> content-hash them from changing the feed history after publishing, as a newly-created message wouldn&#39;t match the hash of later messages which were already replicated.
       This ensures the append-only constraint, and thus safe network convergence.
     </p>
-
-    <p class="next"><a href="/protocols/secret-handshake.html">Secret Handshake</a></p>
-    <ul class="see-also">
-      <li><a href="/docs/social/social-network.html">Social Network</a></li>
-    </ul>
-  `
+  `,
+  next: ['/guides/protocols/secret-handshake.html', 'Secret Handshake']
 })
