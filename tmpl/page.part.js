@@ -16,7 +16,7 @@ module.exports = (opts) => {
   }
 
   // pick the navs
-  var tabFn = tabs[opts.section || 'docs']
+  var tabFn = tabs[opts.section || 'docs'] || ()=>``
   var leftnavFn = leftnav[opts.tab || 'basics']
 
   // next and see-also
@@ -33,8 +33,8 @@ module.exports = (opts) => {
       ${hero}
       ${tabs.sections(opts.section)}
       ${tabFn(opts.tab)}
-      <div class="nav-content-unit">
-        ${leftnavFn(opts.path)}
+      <div class="nav-content-unit ${!leftnavFn?'nonav':''}">
+        ${leftnavFn ? leftnavFn(opts.path) : ''}
         <div class="content">
           ${opts.content}
           ${seeAlso}

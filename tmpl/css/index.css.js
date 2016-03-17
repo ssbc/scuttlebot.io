@@ -68,15 +68,21 @@ hr {
   display: flex;
   width: 800px;
   margin: 0px auto;
+  box-sizing: border-box;
+}
+.nav-content-unit:not(.nonav) {
   border: 1px solid #ddd;
   box-shadow: 0 2px 3px rgba(0,0,0,0.05);
-  box-sizing: border-box;
 }
 
 .content {
   max-width: 540px;
   flex: 1;
   padding: 2em 1em 2em 2em;
+}
+.nonav .content {
+  max-width: 800px;
+  padding: 0;
 }
 .content > :first-child {
   padding-top: 0;
@@ -120,4 +126,5 @@ ${ require('./hero.part')() }
 ${ require('./tabs.part')() }
 ${ require('./nav.part')() }
 ${ require('./columns.part')() }
+${ require('./cards.part')() }
 `
