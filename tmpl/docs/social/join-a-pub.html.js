@@ -2,6 +2,7 @@ var com = require('../../com.part')
 var page = require('../../page.part')
 
 module.exports = () => page({
+  title: 'Join a Pub',
   section: 'docs',
   tab: 'docs-social',
   path :'/docs/social/join-a-pub.html',

@@ -1,6 +1,7 @@
 var md = require('../../../markdown')
 var page = require('../../page.part')
 module.exports = () => page({
+  title: 'Messages by user',
   section: 'docs',
   tab: 'docs-advanced',
   path :'/docs/advanced/messages-by-user.html',

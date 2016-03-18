@@ -1,6 +1,7 @@
 var md = require('../../../markdown')
 var page = require('../../page.part')
 module.exports = () => page({
+  title: 'SSBify',
   section: 'apis',
   tab: 'apis-community',
   path: '/apis/community/ssbify.html',

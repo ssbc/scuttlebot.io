@@ -2,6 +2,7 @@ var page = require('../../page.part')
 var com = require('../../com.part')
 
 module.exports = () => page({
+  title: 'Read the log',
   section: 'docs',
   tab: 'docs-basics',
   path :'/docs/basics/read-the-log.html',

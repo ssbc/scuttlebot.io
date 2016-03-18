@@ -1,5 +1,6 @@
 var page = require('../../page.part')
 module.exports = () => page({
+  title: 'Social network',
   section: 'docs',
   tab: 'guides-protocols',
   path: '/social/social-network.html',

@@ -1,6 +1,7 @@
 var md = require('../../../markdown')
 var page = require('../../page.part')
 module.exports = () => page({
+  title: 'View a profile',
   section: 'docs',
   tab: 'docs-social',
   path :'/docs/social/view-a-profile.html',

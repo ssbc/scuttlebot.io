@@ -2,6 +2,7 @@ var page = require('../../page.part')
 var com = require('../../com.part')
 
 module.exports = () => page({
+  title: 'Encryption',
   section: 'docs',
   tab: 'docs-basics',
   path :'/docs/basics/encryption.html',

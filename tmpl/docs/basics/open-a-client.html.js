@@ -2,6 +2,7 @@ var page = require('../../page.part')
 var com = require('../../com.part')
 
 module.exports = () => page({
+  title: 'Open a client',
   section: 'docs',
   tab: 'docs-basics',
   path :'/docs/basics/open-a-client.html',

@@ -1,6 +1,7 @@
 var com = require('../../com.part')
 var page = require('../../page.part')
 module.exports = () => page({
+  title: 'Install the database',
   section: 'docs',
   tab: 'docs-basics',
   path :'/docs/basics/install-the-database.html',

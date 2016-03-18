@@ -2,6 +2,7 @@ var page = require('../../page.part')
 var com = require('../../com.part')
 
 module.exports = () => page({
+  title: 'Secure Scuttlebutt',
   section: 'guides',
   tab: 'guides-protocols',
   path: '/guides/protocols/secure-scuttlebutt.html',

@@ -1,6 +1,7 @@
 var md = require('../../../markdown')
 var page = require('../../page.part')
 module.exports = () => page({
+  title: 'Create new users',
   section: 'docs',
   tab: 'docs-social',
   path :'/docs/social/create-new-users.html',

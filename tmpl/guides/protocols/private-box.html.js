@@ -2,6 +2,7 @@ var page = require('../../page.part')
 var com = require('../../com.part')
 
 module.exports = () => page({
+  title: 'Private Box',
   section: 'guides',
   tab: 'guides-protocols',
   path: '/guides/protocols/private-box.html',

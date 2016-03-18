@@ -1,6 +1,7 @@
 var md = require('../../../markdown')
 var page = require('../../page.part')
 module.exports = () => page({
+  title: 'Feed (receive time sort)',
   section: 'docs',
   tab: 'docs-advanced',
   path :'/docs/advanced/feed-receive-time-sort.html',

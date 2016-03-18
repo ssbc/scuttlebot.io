@@ -1,5 +1,6 @@
 var page = require('../../page.part')
 module.exports = () => page({
+  title: 'Secret Handshake',
   section: 'guides',
   tab: 'guides-protocols',
   path: '/guides/protocols/secret-handshake.html',

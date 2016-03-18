@@ -1,6 +1,7 @@
 var md = require('../../../markdown')
 var page = require('../../page.part')
 module.exports = () => page({
+  title: 'Patchwork-Threads',
   section: 'apis',
   tab: 'apis-community',
   path: '/apis/community/patchwork-threads.html',

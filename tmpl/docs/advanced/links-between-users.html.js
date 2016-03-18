@@ -1,6 +1,7 @@
 var md = require('../../../markdown')
 var page = require('../../page.part')
 module.exports = () => page({
+  title: 'Links between users',
   section: 'docs',
   tab: 'docs-advanced',
   path :'/docs/advanced/links-between-users.html',

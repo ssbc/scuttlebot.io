@@ -2,6 +2,7 @@ var page = require('../../page.part')
 var com = require('../../com.part')
 
 module.exports = () => page({
+  title: 'Update your profile',
   section: 'docs',
   tab: 'docs-social',
   path :'/docs/social/update-your-profile.html',

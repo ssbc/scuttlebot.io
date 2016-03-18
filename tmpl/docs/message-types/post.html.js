@@ -1,6 +1,7 @@
 var md = require('../../../markdown')
 var page = require('../../page.part')
 module.exports = () => page({
+  title: 'Post messages',
   section: 'docs',
   tab: 'docs-message-types',
   path: '/docs/message-types/post.html',
