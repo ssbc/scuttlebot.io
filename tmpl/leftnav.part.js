@@ -7,35 +7,26 @@ function item (current, path, label) {
 
 module.exports['docs-basics'] = (c) => `<ul class="nav">
   ${item(c, '/docs/basics/install-the-database.html', 'Install the database')}
-  ${item(c, '/docs/basics/open-a-client.html', 'Open a client')}
+  ${item(c, '/docs/basics/open-a-client.html', 'Open a client (js only)')}
   ${item(c, '/docs/basics/publish-a-message.html', 'Publish a message')}
-  ${item(c, '/docs/basics/read-the-log.html', 'Read the log')}
-  ${item(c, '/docs/basics/publish-a-file.html', 'Publish a file')}
-  ${item(c, '/docs/basics/read-a-file.html', 'Read a file')}
-  ${item(c, '/docs/basics/encryption.html', 'Encryption')}
+  ${item(c, '/docs/basics/read-your-log.html', 'Read your log')}
+  ${item(c, '/docs/basics/create-secondary-users.html', 'Create secondary users')}
+  ${item(c, '/docs/basics/encryption.html', 'Encrypt messages')}
+  ${item(c, '/docs/basics/sync-via-wifi.html', 'Sync via Wifi')}
 </ul>`
 
 module.exports['docs-social'] = (c) => `<ul class="nav">
-  ${item(c, '/docs/social/follow-users.html', 'Follow users')}
-  ${item(c, '/docs/social/query-the-social-graph.html', 'Query the social graph')}
   ${item(c, '/docs/social/update-your-profile.html', 'Update your profile')}
   ${item(c, '/docs/social/view-a-profile.html', 'View a profile')}
-  ${item(c, '/docs/social/create-new-users.html', 'Create new users')}
+  ${item(c, '/docs/social/follow-users.html', 'Follow users')}
+  ${item(c, '/docs/social/query-the-social-graph.html', 'Query the social graph')}
   ${item(c, '/docs/social/join-a-pub.html', 'Join a Pub')}
-  ${item(c, '/docs/social/create-a-pub.html', 'Create a Pub')}
-</ul>`
-
-module.exports['docs-message-types'] = (c) => `<ul class="nav">
-  ${item(c, '/docs/message-types/post.html', 'Post')}
-  ${item(c, '/docs/message-types/about.html', 'About')}
-  ${item(c, '/docs/message-types/contact.html', 'Contact')}
-  ${item(c, '/docs/message-types/vote.html', 'Vote')}
-  ${item(c, '/docs/message-types/pub.html', 'Pub')}
-  ${item(c, '/docs/message-types/custom-types.html', 'Custom Types')}
 </ul>`
 
 module.exports['docs-advanced'] = (c) => `<ul class="nav">
   ${item(c, '/docs/advanced/links.html', 'Links')}
+  ${item(c, '/docs/advanced/publish-a-file.html', 'Publish a file')}
+  ${item(c, '/docs/advanced/read-a-file.html', 'Read a file')}
   ${item(c, '/docs/advanced/feed-send-time-sort.html', 'Feed (send time sort)')}
   ${item(c, '/docs/advanced/feed-receive-time-sort.html', 'Feed (receive time sort)')}
   ${item(c, '/docs/advanced/messages-by-type.html', 'Messages by type')}
@@ -47,8 +38,18 @@ module.exports['docs-advanced'] = (c) => `<ul class="nav">
   ${item(c, '/docs/advanced/post-threads.html', 'Post threads')}
 </ul>`
 
+module.exports['docs-message-types'] = (c) => `<ul class="nav">
+  ${item(c, '/docs/message-types/post.html', 'Post')}
+  ${item(c, '/docs/message-types/about.html', 'About')}
+  ${item(c, '/docs/message-types/contact.html', 'Contact')}
+  ${item(c, '/docs/message-types/vote.html', 'Vote')}
+  ${item(c, '/docs/message-types/pub.html', 'Pub')}
+  ${item(c, '/docs/message-types/custom-types.html', 'Custom Types')}
+</ul>`
+
 module.exports['docs-config'] = (c) => `<ul class="nav">
   ${item(c, '/docs/config/configure-scuttlebot.html', 'Configure Scuttlebot')}
+  ${item(c, '/docs/config/create-a-pub.html', 'Create a Pub')}
   ${item(c, '/docs/config/creating-test-databases.html', 'Creating test databases')}
   ${item(c, '/docs/config/creating-test-users.html', 'Creating test users')}
 </ul>`

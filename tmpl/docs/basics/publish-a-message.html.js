@@ -8,12 +8,19 @@ module.exports = () => page({
   path :'/docs/basics/publish-a-message.html',
   content: `
     <h2>Publish a message</h2>
+    <p>
+      Every user has an append-only log of JSON messages, called their feed.
+      Let's start your feed by telling the world, hello!
+    </p>
+    <p>
+      Use this command to publish your first message:
+    </p>
     ${ com.code({ js: jsSnippet, bash: bashSnippet }) }
-    <p class="next"><a href="/docs/basics/read-the-log.html">Read the log</a></p>
     <ul class="see-also">
-      <li><a href="/advanced/message-schemas.html">Message schemas</a></li>
-      <li><a href="/advanced/linking-messages.html">Linking messages</a></li>
+      <li><a href="/apis/scuttlebot/ssb.html#publish-async">Publish API</a></li>
+      <li><a href="/docs/message-types/post.html">Post messages</a></li>
     </ul>
+    <p class="next"><a href="/docs/basics/read-your-log.html">Read your log</a></p>
   `
 })
 

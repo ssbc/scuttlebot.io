@@ -1,5 +1,8 @@
 ## Messages by type
 
+Sometimes it's helpful to get all messages of a certain type.
+For this, you can use 'messagesByType':
+
 ```js
 var pull = require('pull-stream')
 pull(

@@ -26,7 +26,7 @@ function injectTOC (remark, options) {
   remark.Compiler.prototype.visitors.tableOfContents = renderTOC
   return ast => {
     var headings = ast.children.filter(node => node.type == 'heading' && node.depth == 2)
-    if (headings.length > 2)
+    if (headings.length > 3)
       createTOC(ast, headings)
     return ast
   }  

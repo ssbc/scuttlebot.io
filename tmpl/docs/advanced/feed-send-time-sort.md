@@ -1,5 +1,8 @@
 ## Messages ordered by timestamp
 
+You can fetch all of the messages in your Scuttlebot DB, merged into one stream.
+To fetch them ordered by the timestamp at time-of-publish, use 'createFeedStream'.
+
 ```js
 var pull = require('pull-stream')
 pull(

@@ -1,7 +1,7 @@
-## Create new users
+## Create secondary users
 
 By default, Scuttlebot uses a "master" identity/feed, which `sbot.publish()` will append new messages to.
-If you want to manipulate additional feeds, you can load the keypair and then use this library to do so.
+If you want to publish to additional feeds, you can load the keypair and then use this library to do so.
 
 ``` js
 var ssbFeed = require('ssb-feed')

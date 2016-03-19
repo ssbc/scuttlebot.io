@@ -12,13 +12,23 @@ module.exports = () => page({
 module.exports.content = () => `
   <h2>Install the database</h2>
   ${ com.code({ bash: `npm install -g scuttlebot` }) }
+  <p>
+    Install the database to your device, not to a host.
+    Each user runs their own Scuttlebot.
+  </p>
   <h2>Start the server</h2>
   ${ com.code({ bash: `sbot server` }) }
-  <p class="next"><a href="/docs/basics/open-a-client.html">Open a client</a></p>
+  <blockquote>
+    Scuttlebot server must be running for any of its other commands, or apps, to work.
+  </blockquote>
+  <h2>Next: <a href="/apps/index.html">Choose an application</a></h2>
+  <p>
+    Find a nice UI for Scuttlebot.
+    <a href="/apps/index.html">&rarr; Apps page</a>
+
+  <h2>Or: <a href="/docs/basics/open-a-client.html">Continue this guide</a></h2>
+  <p>
+    Learn how to use Scuttlebot from the commandline, and how to build your own applications.
+    <a href="/docs/basics/open-a-client.html">&rarr; Next step in the guide</a>
+  </p>
 `
-  // <h2>Autostart the server (OSX)</h2>
-  // <p>todo</p>
-  // <h2>Autostart the server (Ubuntu)</h2>
-  // <p>todo</p>
-  // <h2>Autostart the server (Windows)</h2>
-  // <p>todo</p>

@@ -26,6 +26,13 @@ h5:hover .anchor {
   visibility: visible;
 } 
 
+blockquote {
+  color: gray;
+  border-left: 8px solid #ddd;
+  margin-left: 0;
+  padding-left: 1em;
+}
+
 code, pre {
   font-family: 'Source Code Pro', monospace;
   background: #F5F2F0;

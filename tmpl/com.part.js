@@ -16,7 +16,7 @@ module.exports.tableOfContents = items => {
     .map(item => [item.children[0].url, item.children[1].value])
     .filter(item => item[0] && item[1])
   return `<div class="table-of-contents">
-    <a href="#">Jump to...</a>
+    <a href="#">Jump to section...</a>
     <ul>
       ${ items.map(item => `<li><a href="${item[0]}">${item[1]}</a></li>`).join('') }
     </ul>
@@ -25,7 +25,7 @@ module.exports.tableOfContents = items => {
 
 // enforce an order to the language tabs
 function langPrioritySort (a, b) {
-  if (b == 'js' && a != 'js')
+  if (b == 'bash' && a != 'bash')
     return 1
   return -1
 }

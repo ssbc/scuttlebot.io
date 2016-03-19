@@ -14,9 +14,9 @@ module.exports.sections = (c) => `<div class="tabs big">
 
 module.exports.docs = (c) => `<div class="tabs small">
   ${item(c, 'docs-basics', '/docs/basics/install-the-database.html', 'Basics')}
-  ${item(c, 'docs-social', '/docs/social/follow-users.html', 'Social')}
-  ${item(c, 'docs-message-types', '/docs/message-types/post.html', 'Message Types')}
+  ${item(c, 'docs-social', '/docs/social/update-your-profile.html', 'Social')}
   ${item(c, 'docs-advanced', '/docs/advanced/links.html', 'Advanced')}
+  ${item(c, 'docs-message-types', '/docs/message-types/post.html', 'Message Types')}
   ${item(c, 'docs-config', '/docs/config/configure-scuttlebot.html', 'Config')}
 </div>`
 

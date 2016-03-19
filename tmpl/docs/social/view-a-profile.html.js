@@ -7,7 +7,8 @@ module.exports = () => page({
   path :'/docs/social/view-a-profile.html',
   content: md.doc(__dirname+'/view-a-profile.md'),
   seeAlso: [
-    ['/docs/message-types/about.html', 'About messages']
+    ['/docs/message-types/about.html', 'About messages'],
+    ['/apis/scuttlebot/ssb.html#links-source', 'links API']
   ],
-  next: ['/docs/social/create-new-users.html', 'Create new users']
+  next: ['/docs/social/follow-users.html', 'Follow users']
 })

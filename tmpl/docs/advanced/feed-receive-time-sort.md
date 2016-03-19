@@ -1,5 +1,8 @@
 ## Messages ordered by receive-time
 
+You can fetch all of the messages in your Scuttlebot DB, merged into one stream.
+To fetch them ordered by the timestamp at time-of-download, use 'createLogStream'.
+
 ```js
 var pull = require('pull-stream')
 pull(

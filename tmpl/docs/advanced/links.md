@@ -62,7 +62,7 @@ sbot.publish({
 
 ---
 
-To query the link-graph, use [links](https://github.com/ssbc/scuttlebot/blob/master/api.md#links-source):
+To query the link-graph, use [the links method](/apis/scuttlebot/ssb.html#links-source):
 
 ```bash
 sbot links [--source id|filter] [--dest id|filter] [--rel value]
@@ -125,7 +125,7 @@ pull(
 A common pattern is to recursively fetch the links that point to a message, creating a tree.
 This is useful for creating comment-threads, for instance.
 
-You can do that easily in scuttlebot with [relatedMessages](https://github.com/ssbc/scuttlebot/blob/master/api.md#relatedmessages-async).
+You can do that easily in scuttlebot with [relatedMessages](/apis/scuttlebot/ssb.html#relatedmessages-async).
 
 ```bash
 sbot relatedMessages --id {id}
