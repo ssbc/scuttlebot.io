@@ -6,7 +6,11 @@ module.exports = () => `
   box-sizing: border-box;
 }
 .tabs.big {
+}
+.tabs.small {
   margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-top: 0;
 }
 
 .tabs > div {
@@ -24,6 +28,7 @@ module.exports = () => `
 }
 .tabs.big > div.current {
   background: #fff;
+  border-bottom: 0;
 }
 
 .tabs > div a {
@@ -40,6 +45,9 @@ module.exports = () => `
 }
 .tabs > div.current a {
   color: #444;
+}
+.tabs.small > div a {
+  padding: 1em 0;
 }
 .tabs.small > div.current a:before {
   content: '\\25b6 ';
