@@ -17,7 +17,45 @@ module.exports = () => page({
 
     <hr>
 
-    <h2 id="concepts">Concepts</h2>
+    <h2>Overview</h2>
+    <p>
+      Scuttlebot forms a global cryptographic social network with its peers.
+      Each user is identified by a public key, and publishes a log of signed messages, which other users follow socially.
+    </p>
+    <p>
+      Scuttlebot searches the P2P mesh for new messages and files from followed users and from FoaFs.
+      The messages and files are stored locally, indefinitely, for applications to read.
+    </p>
+
+    <h3>Identity</h3>
+    <p>
+      Users are identified by confirmations and signals in the social graph.
+      This is known as a Web-of-Trust.
+      There is no global registry of usernames.
+      Instead, users name themselves, and share petnames for each other.
+    </p>
+    <p>
+      Discovery occurs by examining the social graph, or by out-of-band sharing.    
+      Applications can analyze the follow-graph, and look for "flag" messages, to determine who is trust-worthy in the network.
+    </p>
+
+    <h3>Pub Servers</h3>
+    <p>
+      "Pubs" are bot-users that have public IPs.
+      They follow users and rehost the messages to other peers, ensuring good uptime and no firewall blockage.
+    </p>
+    <p>
+      Pubs have no special privileges, and are not trusted by users.
+      However, because Scuttlebot has no DHT or NAT-traversal utilities, users must "join" a Pub to distribute their messages on the WAN.
+    </p>
+    <p>
+      Scuttlebot can change Pubs, or join more than one, and sync directly over Wifi.
+      Identity is not tied to the Pubs.
+    </p>
+
+    <hr>
+
+    <h2 id="concepts">Concepts in Depth</h2>
     <p>Building upon Secure Scuttlebutt requires understanding a few concepts that it uses to ensure the unforgeability of message feeds.</p>
     
     <h3 id="identities">Identities</h3>

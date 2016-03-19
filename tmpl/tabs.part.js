@@ -9,7 +9,7 @@ module.exports.sections = (c) => `<div class="tabs big">
   ${item(c, 'docs', '/docs/basics/install-the-database.html', 'Docs')}
   ${item(c, 'apis', '/apis/scuttlebot/ssb.html', 'APIs')}
   ${item(c, 'apps', '/apps/index.html', 'Apps')}
-  ${item(c, 'guides', '/guides/protocols/secure-scuttlebutt.html', 'Guides')}
+  ${item(c, 'guides', '/guides/protocols/secure-scuttlebutt.html', 'More')}
 </div>`
 
 module.exports.docs = (c) => `<div class="tabs small">
@@ -29,7 +29,4 @@ module.exports.apis = (c) => `<div class="tabs small">
 
 module.exports.guides = (c) => `<div class="tabs small">
   ${item(c, 'guides-protocols', '/guides/protocols/secure-scuttlebutt.html', 'Protocols')}
-  ${item(c, 'guides-social-feed-app', '/guides/social-feed-app/intro.html', 'Social Feed App')}
-  ${item(c, 'guides-private-messaging-app', '/guides/private-messaging-app/intro.html', 'Private Messaging App')}
-  ${item(c, 'guides-todo-list-app', '/guides/todo-list-app/intro.html', 'Todo List App')}
 </div>`

@@ -76,10 +76,11 @@ hr {
   width: 800px;
   margin: 0px auto;
   box-sizing: border-box;
-}
-.nav-content-unit:not(.nonav) {
   border: 1px solid #ccc;
   box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+}
+.nav-content-unit.nonav {
+  border-top: 0;
 }
 
 .content {
