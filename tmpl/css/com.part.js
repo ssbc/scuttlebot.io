@@ -100,4 +100,32 @@ a.cta.dark {
   color: #555;
   text-decoration: none;
 }
+
+.choice-widget {
+  display: flex;
+  border: 1px solid #ccc;
+  background: #F5F2F0;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+}
+.choice-widget a {
+  flex: 1;
+  display: block;
+  color: #333;
+  text-decoration: none;
+  padding: 1em 0.5em;
+  text-shadow: 0 1px white;
+  text-align: center;
+}
+.choice-widget a:hover {
+  background: #E5E2E0;
+}
+.choice-widget h2 {
+  margin-top: 0;
+}
+.choice-widget p {
+  margin-bottom: 0;
+}
+.choice-widget a:last-child {
+  border-left: 1px solid #ccc;
+}
 `

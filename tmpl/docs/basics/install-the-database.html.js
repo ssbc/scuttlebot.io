@@ -21,14 +21,19 @@ module.exports.content = () => `
   <blockquote>
     Scuttlebot server must be running for any of its other commands, or apps, to work.
   </blockquote>
-  <h2>Next: <a href="/apps/index.html">Choose an application</a></h2>
-  <p>
-    Find a nice UI for Scuttlebot.
-    <a href="/apps/index.html">&rarr; Apps page</a>
-
-  <h2>Or: <a href="/docs/basics/open-a-client.html">Continue this guide</a></h2>
-  <p>
-    Learn how to use Scuttlebot from the commandline, and how to build your own applications.
-    <a href="/docs/basics/open-a-client.html">&rarr; Next step in the guide</a>
-  </p>
+  <h2>Next:</h2>
+  <div class="choice-widget">
+    <a href="/apps/index.html">
+      <h2>Choose an application</h2>
+      <p>
+        Find a UI for Scuttlebot with the existing applications.
+      </p>
+    </a>
+    <a href="/docs/basics/open-a-client.html">
+      <h2>Continue this guide</h2>
+      <p>
+        Learn how to build your own applications.
+      </p>
+    </a>
+  </div>
 `
