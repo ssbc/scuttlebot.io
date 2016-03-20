@@ -132,7 +132,7 @@ a.cta.dark {
   text-align: center;
 }
 .choice-widget a:hover {
-  background: #E5E2E0;
+  background: #fff;
 }
 .choice-widget h2 {
   margin-top: 0;
