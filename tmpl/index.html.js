@@ -18,7 +18,7 @@ module.exports = () => page({
         Scuttlebot is an open source <strong>peer-to-peer log store</strong> used as a database, identity provider, and messaging system.
         It features global replication, file-syncronization, and end-to-end encryption.<br>
         <br>
-        <a href="/guides/protocols/secure-scuttlebutt.html">Read about the protocol</a>.
+        <a href="/more/protocols/secure-scuttlebutt.html">Read about the protocol</a>.
       </p>
     </div>
   `,

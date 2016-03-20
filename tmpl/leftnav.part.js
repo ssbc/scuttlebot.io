@@ -106,20 +106,13 @@ module.exports['apis-community'] = (c) => `<ul class="nav">
   ${item(c, '/apis/community/patchwork-threads.html', 'Patchwork-Threads')}
 </ul>`
 
-module.exports['guides-protocols'] = (c) => `<ul class="nav">
-  ${item(c, '/guides/protocols/secure-scuttlebutt.html', 'Secure Scuttlebutt')}
-  ${item(c, '/guides/protocols/secret-handshake.html', 'Secret Handshake')}
-  ${item(c, '/guides/protocols/private-box.html', 'Private Box')}
+module.exports['more-protocols'] = (c) => `<ul class="nav">
+  ${item(c, '/more/protocols/secure-scuttlebutt.html', 'Secure Scuttlebutt')}
+  ${item(c, '/more/protocols/secret-handshake.html', 'Secret Handshake')}
+  ${item(c, '/more/protocols/private-box.html', 'Private Box')}
 </ul>`
 
-module.exports['guides-social-feed-app'] = (c) => `<ul class="nav">
-  ${item(c, '/guides/social-feed-app/intro.html', 'Intro')}
-</ul>`
-
-module.exports['guides-private-messaging-app'] = (c) => `<ul class="nav">
-  ${item(c, '/guides/private-messaging-app/intro.html', 'Intro')}
-</ul>`
-
-module.exports['guides-todo-list-app'] = (c) => `<ul class="nav">
-  ${item(c, '/guides/todo-list-app/intro.html', 'Intro')}
+module.exports['more-articles'] = (c) => `<ul class="nav">
+  ${item(c, '/more/articles/design-challenge-avoid-centralization-and-singletons.html', 'Design Challenge: Avoid Centralization and Singletons')}
+  ${item(c, '/more/articles/design-challenge-sybil-attack.html', 'Design Challenge: Sybil Attacks')}
 </ul>`

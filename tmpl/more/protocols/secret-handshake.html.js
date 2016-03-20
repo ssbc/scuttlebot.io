@@ -1,9 +1,9 @@
 var page = require('../../page.part')
 module.exports = () => page({
   title: 'Secret Handshake',
-  section: 'guides',
-  tab: 'guides-protocols',
-  path: '/guides/protocols/secret-handshake.html',
+  section: 'more',
+  tab: 'more-protocols',
+  path: '/more/protocols/secret-handshake.html',
   content: `
     <h2>Secret Handshake</h1>
     <p>
@@ -12,5 +12,5 @@ module.exports = () => page({
     </p>
     <p><a href="./shs.pdf">Read the White Paper</a></p>
   `,
-  next: ['/guides/protocols/private-box.html', 'Private Box']
+  next: ['/more/protocols/private-box.html', 'Private Box']
 })

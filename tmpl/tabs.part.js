@@ -9,7 +9,7 @@ module.exports.sections = (c) => `<div class="tabs big">
   ${item(c, 'docs', '/docs/basics/install-the-database.html', 'Docs')}
   ${item(c, 'apis', '/apis/scuttlebot/ssb.html', 'APIs')}
   ${item(c, 'apps', '/apps/index.html', 'Apps')}
-  ${item(c, 'guides', '/guides/protocols/secure-scuttlebutt.html', 'More')}
+  ${item(c, 'more', '/more/protocols/secure-scuttlebutt.html', 'More')}
 </div>`
 
 module.exports.docs = (c) => `<div class="tabs small">
@@ -27,6 +27,7 @@ module.exports.apis = (c) => `<div class="tabs small">
   ${item(c, 'apis-community', '/apis/community/ssbify.html', 'Community')}
 </div>`
 
-module.exports.guides = (c) => `<div class="tabs small">
-  ${item(c, 'guides-protocols', '/guides/protocols/secure-scuttlebutt.html', 'Protocols')}
+module.exports.more = (c) => `<div class="tabs small">
+  ${item(c, 'more-protocols', '/more/protocols/secure-scuttlebutt.html', 'Protocols')}
+  ${item(c, 'more-articles', '/more/articles/design-challenge-avoid-centralization-and-singletons.html', 'Articles')}
 </div>`

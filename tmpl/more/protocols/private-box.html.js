@@ -3,9 +3,9 @@ var com = require('../../com.part')
 
 module.exports = () => page({
   title: 'Private Box',
-  section: 'guides',
-  tab: 'guides-protocols',
-  path: '/guides/protocols/private-box.html',
+  section: 'more',
+  tab: 'more-protocols',
+  path: '/more/protocols/private-box.html',
   content: `
     <h2>Private Box</h2>
     <p>

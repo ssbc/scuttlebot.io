@@ -3,9 +3,9 @@ var com = require('../../com.part')
 
 module.exports = () => page({
   title: 'Secure Scuttlebutt',
-  section: 'guides',
-  tab: 'guides-protocols',
-  path: '/guides/protocols/secure-scuttlebutt.html',
+  section: 'more',
+  tab: 'more-protocols',
+  path: '/more/protocols/secure-scuttlebutt.html',
   content: `
     <h2>Secure Scuttlebutt</h2>
     <p>Secure Scuttlebutt is a database protocol for unforgeable append-only message feeds.</p>
@@ -181,5 +181,5 @@ module.exports = () => page({
       This ensures the append-only constraint, and thus safe network convergence.
     </p>
   `,
-  next: ['/guides/protocols/secret-handshake.html', 'Secret Handshake']
+  next: ['/more/protocols/secret-handshake.html', 'Secret Handshake']
 })
