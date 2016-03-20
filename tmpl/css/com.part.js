@@ -79,6 +79,21 @@ a.cta.dark {
   display: block;
 }
 
+.table-of-contents > a {
+  display: inline-block;
+  float: right;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  background: #fafafa;
+  box-shadow: 0 2px 3px rgba(0,0,0,0.05);
+  padding: 0.25em 0.5em;
+  text-decoration: none;
+  color: #555;
+}
+.table-of-contents > a:hover,
+.table-of-contents.expanded > a {
+  background: #fff;
+}
 .table-of-contents ul {
   display: none;
   list-style: none;
