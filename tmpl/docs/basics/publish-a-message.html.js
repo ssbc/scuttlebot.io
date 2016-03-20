@@ -10,7 +10,6 @@ module.exports = () => page({
     <h2>Publish a message</h2>
     <p>
       Every user has an append-only log of JSON messages, called their feed.
-      Let's start your feed by telling the world, hello!
     </p>
     <p>
       Use this command to publish your first message:

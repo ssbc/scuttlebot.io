@@ -24,15 +24,15 @@ module.exports.content = () => `
   <h2>Next:</h2>
   <div class="choice-widget">
     <a href="/apps/index.html">
-      <h2>Choose an application</h2>
+      <h2>Applications</h2>
       <p>
-        Find a UI for Scuttlebot with the existing applications.
+        Choose a UI for Scuttlebot.
       </p>
     </a>
-    <a href="/docs/basics/open-a-client.html">
-      <h2>Continue this guide</h2>
+    <a href="/docs/basics/publish-a-message.html">
+      <h2>Read more</h2>
       <p>
-        Learn how to build your own applications.
+        Learn about the API.
       </p>
     </a>
   </div>

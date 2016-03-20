@@ -1,6 +1,5 @@
 ## Read your log
 
-Let's read back your log.
 Use this command to get your ID:
 
 ```bash

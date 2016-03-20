@@ -3,7 +3,7 @@ module.exports = (opts) => {
   if (opts.title)
     opts.title += ' - Scuttlebot'
   else
-    opts.title = 'Scuttlebot p2p database'
+    opts.title = 'Scuttlebot peer-to-peer log store'
 
   return `<head>
     <title>${opts.title}</title>
