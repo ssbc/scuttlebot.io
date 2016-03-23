@@ -49,6 +49,8 @@ module.exports['docs-message-types'] = (c) => `<ul class="nav">
 
 module.exports['docs-config'] = (c) => `<ul class="nav">
   ${item(c, '/docs/config/configure-scuttlebot.html', 'Configure Scuttlebot')}
+  ${item(c, '/docs/config/get-current-version.html', 'Get current version')}
+  ${item(c, '/docs/config/get-active-config.html', 'Get active config')}
   ${item(c, '/docs/config/create-a-pub.html', 'Create a Pub')}
   ${item(c, '/docs/config/creating-test-databases.html', 'Creating test databases')}
   ${item(c, '/docs/config/creating-test-users.html', 'Creating test users')}

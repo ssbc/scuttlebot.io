@@ -6,5 +6,5 @@ module.exports = () => page({
   tab: 'docs-config',
   path: '/docs/config/configure-scuttlebot.html',
   content: md.doc(__dirname+'/configure-scuttlebot.md'),
-  next: ['/docs/config/creating-test-databases.html', 'Creating test databases']
+  next: ['/docs/config/get-current-version.html', 'Get current version']
 })

@@ -4,8 +4,8 @@ var com = require('../../com.part')
 module.exports = () => page({
   title: 'Create a Pub',
   section: 'docs',
-  tab: 'docs-social',
-  path :'/docs/social/create-a-pub.html',
+  tab: 'docs-config',
+  path :'/docs/config/create-a-pub.html',
   content: `
     <h2>1. Get a public server</h2>
     <p>
