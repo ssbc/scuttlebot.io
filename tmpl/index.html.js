@@ -11,7 +11,7 @@ module.exports = () => page({
       <img src="/img/hermies-256.png">
       <h1>Scuttlebot<br><small>a peer-to-peer messenger<br>for people tired of cloud software</small></h1>
       <p>
-        <a class="cta" href="javascript:alert('TODO: This will popup to a youtube video demoing sbot install and usage, and then patchwork')">&#9654; See it in action</a>
+        ${''/*<a class="cta" href="javascript:alert('TODO: This will popup to a youtube video demoing sbot install and usage, and then patchwork')">&#9654; See it in action</a>*/}
         <a class="cta dark" href="/docs/basics/install-the-database.html"><small>&#11015;</small> Download now</a>
       </p>
       <p class="description">
