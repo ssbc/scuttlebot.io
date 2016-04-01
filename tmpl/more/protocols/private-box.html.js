@@ -44,7 +44,7 @@ module.exports = () => page({
 
     <h4 id="-a-valid-recipient-does-not-know-the-other-recipients-">A valid recipient does not know the other recipients.</h4>
     <p>
-      A valid recipient knows the number of recipients but now who they are.
+      A valid recipient knows the number of recipients but not who they are.
       This is more a sideeffect of the design than an intentional design element.
       The plaintext contents may reveal the recipients, if needed.
     </p>
