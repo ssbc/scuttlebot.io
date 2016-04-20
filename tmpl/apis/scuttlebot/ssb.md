@@ -455,7 +455,7 @@ latestSequence {feedId}
 ```
 
 ```js
-latest({feedId})
+latestSequence({feedId})
 ```
 
 
