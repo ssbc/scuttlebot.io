@@ -8,6 +8,7 @@ module.exports = () => page({
     { id: 'patchwork', title: 'Patchwork', desc: 'Inbox, social feed, and profiles.', url: 'https://github.com/ssbc/patchwork' },
     { id: 'ssb-cli-dashboard', title: 'CLI Dashboard', desc: 'Browse the database state.', url: 'https://github.com/ssbc/ssb-cli-dashboard' },
     { id: 'ssb-simple-whois', title: 'CLI Whois', desc: 'Very simple petname->pubkey lookup.', url: 'https://github.com/ssbc/ssb-simple-whois' },
+    { id: 'git-ssb', title: 'git ssb', desc: 'git repos and issue tracking', url: 'https://git-ssb.celehner.com/%25n92DiQh7ietE%2BR%2BX%2FI403LQoyf2DtR3WQfCkDKlheQU%3D.sha256' },
     { id: 'add-new', title: 'Add an application', url: 'https://github.com/ssbc/scuttlebot.io/blob/master/add-an-application.md' }
   ])
 })
