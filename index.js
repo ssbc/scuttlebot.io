@@ -16,7 +16,7 @@ tmpl.find('.', { matching: '*' }, 'inspect')
       // console.log('copying directory')
       build.dir(entry.relativePath)
     } else if (entry.type == 'file') { 
-      if (entry.name.indexOf('.html.js') !== -1 || entry.name.indexOf('.css.js') !== -1) {
+      if (/\.(html|css).js$/.test(entry.name)) {
         // build html/css files
         // console.log('building')
         buildTemplate(entry)
