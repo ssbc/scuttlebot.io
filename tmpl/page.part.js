@@ -16,7 +16,7 @@ module.exports = (opts) => {
   }
 
   // pick the navs
-  var tabFn = tabs[opts.section || 'docs'] || ()=>``
+  var tabFn = tabs[opts.section || 'docs'] || function () { return '' }
   var leftnavFn = leftnav[opts.tab || 'basics']
 
   // next and see-also
