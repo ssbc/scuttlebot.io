@@ -23,7 +23,7 @@ module.exports = () => page({
       Each user is identified by a public key, and publishes a log of signed messages, which other users follow socially.
     </p>
     <p>
-      Scuttlebot searches the P2P mesh for new messages and files from followed users and from FoaFs.
+      Scuttlebot searches the P2P mesh for new messages and files from followed users and from FoaFs (friend of a friend's).
       The messages and files are stored locally, indefinitely, for applications to read.
     </p>
 
