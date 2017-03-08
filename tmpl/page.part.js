@@ -28,7 +28,7 @@ module.exports = (opts) => {
 
   // render the page
   return `<html>
-    ${head({ title: opts.title })}
+    ${head({ title: opts.title, canonicalUrl: opts.canonicalUrl })}
     <body>
       ${hero}
       ${tabs.sections(opts.section)}

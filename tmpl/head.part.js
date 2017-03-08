@@ -7,6 +7,7 @@ module.exports = (opts) => {
 
   return `<head>
     <title>${opts.title}</title>
+    ${opts.canonicalUrl ? `<link rel="canonical" href="${opts.canonicalUrl}">` : ''}
     <link rel="icon" href="/img/icon.png">
     <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/prism.css">
