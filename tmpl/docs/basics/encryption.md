@@ -4,7 +4,7 @@ As a result, standard connection-based encryption (like HTTPS) is not enough to 
 Instead, Scuttlebot uses [end-to-end encryption](https://en.wikipedia.org/wiki/End-to-end_encryption).
 This is exposed in the JS-only [Scuttlebot.Private API](/apis/scuttlebot/private.html).
 
-> You can [read the details of the encryption protocol here](/guides/protocols/private-box.html).
+> You can [read the details of the encryption protocol here](/more/protocols/private-box.html).
 
 ## Publish an Encrypted Message
 

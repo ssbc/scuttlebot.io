@@ -8,7 +8,7 @@ module.exports = () => page({
   path :'/docs/basics/encryption.html',
   content: md.doc(__dirname+'/encryption.md'),
   seeAlso: [
-    ['/guides/protocols/private-box.html', 'Private Box Protocol'],
+    ['/more/protocols/private-box.html', 'Private Box Protocol'],
     ['/apis/scuttlebot/private.html', 'Scuttlebot.Private API']
   ],
   next: ['/docs/basics/sync-via-wifi.html', 'Sync via Wifi']

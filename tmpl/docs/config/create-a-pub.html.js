@@ -98,8 +98,8 @@ done
 
     <p class="next"><a href="/docs/message-types/post.html">Message types: Post</a></p>
     <ul class="see-also">
-      <li><a href="/modules/scuttlebot-invite.html">Scuttlebot.Invite API</a></li>
-      <li><a href="/docs/social/social-network.html">Social Network</a></li>
+      <li><a href="/apis/scuttlebot/invite.html">Scuttlebot.Invite API</a></li>
+      <li><a href="/more/protocols/secure-scuttlebutt.html">Secure Scuttlebutt</a></li>
     </ul>
   `
 })

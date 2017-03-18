@@ -7,4 +7,4 @@ The primary user's private key is kept in the `~/.ssb/secret` file.
 If you want to set a new primary user, while still using the same database, you can move `~/.ssb/secret` to some other location (eg `~/.ssb/secret.backup`).
 Scuttlebot will automatically create a new user and secret, when started next.
 
-Alternatively, you can [create secondary users](/docs/social/create-new-users.html).
+Alternatively, you can [create secondary users](/docs/basics/create-secondary-users.html).

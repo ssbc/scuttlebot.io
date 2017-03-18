@@ -12,7 +12,7 @@ module.exports = () => page({
     ['/docs/advanced/links.html', 'Linking messages'],
     ['/apis/pull-stream/pull-stream.html', 'Pull streams']
   ],
-  next: ['/docs/basics/read-a-file.html', 'Read a file']
+  next: ['/docs/advanced/read-a-file.html', 'Read a file']
 })
 
 

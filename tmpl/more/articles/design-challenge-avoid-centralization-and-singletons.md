@@ -5,7 +5,7 @@ SecureScuttlebutt goes out of it's way to avoid both centralization and singleto
 ## Avoiding Centralization
 
 The danger of centralization is obvious: it creates a single point of failure that can easily be attacked, or act as an attacker.
-And, it creates a monoculture of information, as the central point starts to control [what information is trusted, or ranked highly](./using-trust-in-open-networks.html).
+And, it creates a monoculture of information, as the central point starts to control [what information is trusted, or ranked highly](https://www.scuttlebutt.nz/stories/using-trust-in-open-networks.html).
 
 To avoid centralization, you make every peer the same.
 

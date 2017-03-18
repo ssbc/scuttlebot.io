@@ -122,7 +122,7 @@ module.exports = () => page({
     <h3 id="following">Following</h3>
     <p>
       Users choose which feeds to synchronize by following them.
-      Presently, <a href="/modules/scuttlebot-replicate.html">Scuttlebot&#39;s replicate plugin</a>, which is enabled by default, looks on the master user&#39;s feed for <code>type:contact</code> messages to know which users are currently followed.
+      Presently, <a href="/apis/scuttlebot/replicate.html">Scuttlebot&#39;s replicate plugin</a>, which is enabled by default, looks on the master user&#39;s feed for <code>type:contact</code> messages to know which users are currently followed.
     </p>
 
     <h3 id="replication">Replication</h3>

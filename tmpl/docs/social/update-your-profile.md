@@ -50,7 +50,7 @@ sbot publish \
 
 ## Set a profile pic
 
-First, <a href="/docs/basics/publish-a-file.html">add the image file to the blobstore.</a>
+First, <a href="/docs/advanced/publish-a-file.html">add the image file to the blobstore.</a>
 Then, publish this message with the outputted file-ID:
 
 ```js
