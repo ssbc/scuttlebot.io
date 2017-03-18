@@ -7,8 +7,8 @@ module.exports = () => page({
   path: '/docs/message-types/contact.html',
   content: md.doc(__dirname+'/contact.md'),
   seeAlso: [
-    ['/docs/advanced/message-schemas.html', 'Message schemas'],
-    ['/docs/advanced/linking-messages.html', 'Linking messages'],
+    ['/docs/message-types/custom-types.html', 'Message schemas'],
+    ['/docs/advanced/links.html', 'Linking messages'],
     ['/apis/modules/ssb-msg-schemas.html', 'SSB-Msg-Schemas API']
   ],
   next: ['./vote.html', 'Vote']

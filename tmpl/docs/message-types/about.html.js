@@ -8,8 +8,8 @@ module.exports = () => page({
   content: md.doc(__dirname+'/about.md'),
   seeAlso: [
     ['/docs/social/update-your-profile.html', 'Update your profile'],
-    ['/docs/advanced/message-schemas.html', 'Message schemas'],
-    ['/docs/advanced/linking-messages.html', 'Linking messages'],
+    ['/docs/message-types/custom-types.html', 'Message schemas'],
+    ['/docs/advanced/links.html', 'Linking messages'],
     ['/apis/modules/ssb-msg-schemas.html', 'SSB-Msg-Schemas API']
   ],
   next: ['./contact.html', 'Contact']

@@ -24,7 +24,7 @@ schemas.pub(id, host, port)
 ```
 
 Related docs:
-  - [Message schemas](/docs/advanced/message-schemas.html)
+  - [Message schemas](/docs/message-types/custom-types.html)
   - [Type: post](/docs/message-types/post.html)
   - [Type: about](/docs/message-types/about.html)
   - [Type: contact](/docs/message-types/contact.html)
