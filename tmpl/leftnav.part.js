@@ -76,6 +76,7 @@ module.exports['apis-modules'] = (c) => `<ul class="nav">
   ${item(c, '/apis/modules/ssb-msg-schemas.html', 'SSB-Msg-Schemas')}
   ${item(c, '/apis/modules/ssb-markdown.html', 'SSB-Markdown')}
   ${item(c, '/apis/modules/ssb-config.html', 'SSB-Config')}
+  ${item(c, '/apis/modules/ssb-party.html', 'SSB-Party')}
   ${item(c, '/apis/modules/secret-stack.html', 'Secret-Stack')}
   ${item(c, '/apis/modules/muxrpc.html', 'MuxRPC')}
   ${item(c, '/apis/modules/muxrpcli.html', 'MuxRPCCli')}
