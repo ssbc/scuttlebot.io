@@ -125,11 +125,4 @@ pull(
 A common pattern is to recursively fetch the links that point to a message, creating a tree.
 This is useful for creating comment-threads, for instance.
 
-You can do that easily in scuttlebot with [relatedMessages](/apis/scuttlebot/ssb.html#relatedmessages-async).
-
-```bash
-sbot relatedMessages --id {id}
-```
-```js
-sbot.relatedMessages({ id: id }, cb)
-```
+You can do that easily in scuttlebot with ..?

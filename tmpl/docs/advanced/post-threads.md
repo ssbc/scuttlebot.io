@@ -1,14 +1,16 @@
 ## Full post-thread
 
+> TODO figure out best api to relace this
+
 ```js
-sbot.relatedMessages({ id: messageId }, function (err, thread) {
-  ...
+pull(
+sbot.links2({ id: messageId }, function (err, thread) {
 })
 ```
+
 ```bash
-sbot relatedMessages --id {messageId}
+sbot links2.read --todo-some-query-magick
 ```
 
-This will provide a tree-structure showing all messages that link to the given message and its children.
 
-[&rarr; relatedMessages API](/apis/scuttlebot/ssb.html#relatedmessages-async)
+[&rarr; ssb-links (links2) API](https://github.com/ssbc/ssb-links)
