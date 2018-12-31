@@ -1,6 +1,6 @@
 ## Open an API client
 
-If youre using Scuttlebot from a JS application, you will need to open a client connection.
+If you're using Scuttlebot from a JS application, you will need to open a client connection.
 
 > If you're using the command-line, you can <a href="./publish-a-message.html">skip this step.</a>
 
