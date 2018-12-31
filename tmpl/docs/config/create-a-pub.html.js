@@ -21,7 +21,7 @@ module.exports = () => page({
     <p>
       Install Scuttlebot using NPM.
     </p>
-    ${ com.code({ bash: `npm install -g scuttlebot` }) }
+    ${ com.code({ bash: `npm install -g ssb-server` }) }
     <p>
       To update scuttlebot in the future, simply run the global install again.
     </p>

@@ -11,7 +11,7 @@ module.exports = () => page({
 // put content in a separate function so that index.html can reuse it
 module.exports.content = () => `
   <h2>Install the database</h2>
-  ${ com.code({ bash: `npm install -g scuttlebot` }) }
+  ${ com.code({ bash: `npm install -g ssb-server` }) }
   <p>
     Install the database to your device, not to a host.
     Each user runs their own Scuttlebot.

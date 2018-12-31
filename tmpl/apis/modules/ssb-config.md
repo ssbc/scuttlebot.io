@@ -1,6 +1,6 @@
 # ssb-config
 
-Configuration module used by [`scuttlebot`](https://github.com/ssbc/scuttlebot).
+Configuration module used by [`scuttlebot`](https://github.com/ssbc/ssb-server).
 
 ## example
 

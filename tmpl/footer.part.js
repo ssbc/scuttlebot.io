@@ -10,6 +10,6 @@ module.exports = (c) => `<div class="footer">
     <li>Community</li>
     <li><p>#scuttlebutt on freenode</p></li>
     <li><a href="https://github.com/ssbc">GitHub Org</a></li>
-    <li><a href="https://github.com/ssbc/scuttlebot">GitHub Repo</a></li>
+    <li><a href="https://github.com/ssbc/ssb-server">GitHub Repo</a></li>
   </ul>
 </div>`
