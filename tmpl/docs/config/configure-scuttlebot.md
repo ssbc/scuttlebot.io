@@ -25,11 +25,11 @@ Configuration is stored in `~/.ssb/config`, which is a JSON file:
 }
 ```
 
-You can also specify config flags in the `sbot server` call.
+You can also specify config flags in the `ssb-server start` call.
 For example:
 
 ```bash
-sbot server --port 1234 --timeout 500
+ssb-server start --port 1234 --timeout 500
 ```
 
 The options:

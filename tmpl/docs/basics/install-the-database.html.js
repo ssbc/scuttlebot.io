@@ -17,7 +17,7 @@ module.exports.content = () => `
     Each user runs their own Scuttlebot.
   </p>
   <h2>Start the server</h2>
-  ${ com.code({ bash: `sbot server` }) }
+  ${ com.code({ bash: `ssb-server start` }) }
   <blockquote>
     Scuttlebot server must be running for any of its other commands, or apps, to work.
   </blockquote>

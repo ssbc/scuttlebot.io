@@ -1,6 +1,6 @@
 # ssb-config
 
-Configuration module used by [`scuttlebot`](https://github.com/ssbc/ssb-server).
+Configuration module used by [`ssb-server`](https://github.com/ssbc/ssb-server).
 
 ## example
 
@@ -25,7 +25,7 @@ var test_config = require('ssb-config/inject')('testnet', {port: 9999})
 * `friends.hops` *(number)* How many friend of friend hops to replicate. Defaults to `3`.
 * `gossip.connections` *(number)* How many other nodes to connect with at one time. Defaults to `2`.
 * `path` *(string)* Path to the application data folder, which contains the private key, message attachment data (blobs) and the leveldb backend. Defaults to `$HOME/.ssb`.
-* `master` *(array)* Pubkeys of users who, if they connect to the Scuttlebot instance, are allowed to command the primary user with full rights. Useful for remotely operating a pub. Defaults to `[]`.
+* `master` *(array)* Pubkeys of users who, if they connect to the server instance, are allowed to command the primary user with full rights. Useful for remotely operating a pub. Defaults to `[]`.
 * `logging.level` *(string)* How verbose should the logging be. Possible values are error, warning, notice, and info. Defaults to `notice`.
 
 There are some configuration options for the sysadmins out there. All configuration is loaded via [`rc`](https://github.com/dominictarr/rc). You can pass any configuration value in as cli arg, env var, or in a file.

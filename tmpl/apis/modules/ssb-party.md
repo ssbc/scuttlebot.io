@@ -20,7 +20,7 @@ overrides, but if the server is already running, these will not affect the exist
 
 ### Example
 
-simplest case: connect to or start a local sbot:
+simplest case: connect to or start a local ssb-server:
 ```
 var party = require('ssb-party')
 
