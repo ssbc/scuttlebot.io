@@ -6,7 +6,8 @@ module.exports = () => page({
   path: '/apps/index.html',
   content: listing([
     { id: 'patchwork', title: 'Patchwork', desc: 'Inbox, social feed, and profiles.', url: 'https://github.com/ssbc/patchwork' },
-    { id: 'ferment', title: 'Ferment', desc: 'Peer-to-peer audio publishing and streaming.', url: 'http://ferment.audio'},
+    { id: 'patchbay', title: 'Patchbay', desc: 'An alternative Secure Scuttlebutt client interface', url: 'https://github.com/ssbc/patchbay' },
+    { id: 'ferment', title: 'Ferment', desc: 'Peer-to-peer audio publishing and streaming.', url: 'http://ferment.audio' },
     { id: 'ssb-cli-dashboard', title: 'CLI Dashboard', desc: 'Browse the database state.', url: 'https://github.com/ssbc/ssb-cli-dashboard' },
     { id: 'ssb-simple-whois', title: 'CLI Whois', desc: 'Very simple petname->pubkey lookup.', url: 'https://github.com/ssbc/ssb-simple-whois' },
     { id: 'git-ssb', title: 'git ssb', desc: 'git repos and issue tracking', url: 'https://git.scuttlebot.io/%25n92DiQh7ietE%2BR%2BX%2FI403LQoyf2DtR3WQfCkDKlheQU%3D.sha256' },
