@@ -7,6 +7,7 @@ module.exports = () => page({
   content: listing([
     { id: 'patchwork', title: 'Patchwork', desc: 'Inbox, social feed, and profiles.', url: 'https://github.com/ssbc/patchwork' },
     { id: 'patchbay', title: 'Patchbay', desc: 'An alternative Secure Scuttlebutt client interface', url: 'https://github.com/ssbc/patchbay' },
+    { id: 'manyverse', title: 'Manyverse', desc: 'Beta Android client', url: 'https://www.manyver.se' },
     { id: 'ferment', title: 'Ferment', desc: 'Peer-to-peer audio publishing and streaming.', url: 'http://ferment.audio' },
     { id: 'ssb-cli-dashboard', title: 'CLI Dashboard', desc: 'Browse the database state.', url: 'https://github.com/ssbc/ssb-cli-dashboard' },
     { id: 'ssb-simple-whois', title: 'CLI Whois', desc: 'Very simple petname->pubkey lookup.', url: 'https://github.com/ssbc/ssb-simple-whois' },
