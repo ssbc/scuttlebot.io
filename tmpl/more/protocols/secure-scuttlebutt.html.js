@@ -177,7 +177,7 @@ module.exports = () => page({
     </ul>
     <p>
       Additionally there is a protection from the feed owner, through the blockchain.
-      The <code>previous</code> content-hash them from changing the feed history after publishing, as a newly-created message wouldn&#39;t match the hash of later messages which were already replicated.
+      The <code>previous</code> content-hash forbids them from changing the feed history after publishing, as a newly-created message wouldn&#39;t match the hash of later messages which were already replicated.
       This ensures the append-only constraint, and thus safe network convergence.
     </p>
   `,
