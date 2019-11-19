@@ -6,7 +6,7 @@ To create databases for testing, you can specify a different data-directory usin
 For instance:
 
 ```bash
-ssb_appname=test sbot server
+ssb_appname=test ssb-server start
 ```
 
 This will spawn the server with the `~/.test` data-directory.

@@ -28,7 +28,7 @@ ssbClient(function (err, sbot) {
 })
 ```
 
-This example uses `ssb-client`, but, if you're embedding `scuttlebot` or the `secure-scuttlebutt` library into your process, you can use them locally.
+This example uses `ssb-client`, but, if you're embedding `ssb-server` or the `secure-scuttlebutt` library into your process, you can use them locally.
 
 [View on Github](https://github.com/ssbc/ssb-feed)
 

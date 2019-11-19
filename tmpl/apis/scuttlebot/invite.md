@@ -8,11 +8,11 @@ Invite-token system, mainly used for pubs.
 Create a new invite code.
 
 ```bash
-create {n}
+sbot create {n}
 ```
 
 ```js
-create(n, cb)
+sbot.create(n, cb)
 ```
 
 This produces an invite-code which encodes the sbot server's address, and a keypair seed.
@@ -28,11 +28,11 @@ The sbot server will then grant access to the `use` call.
 Use an invite code.
 
 ```bash
-accept {invitecode}
+sbot accept {invitecode}
 ```
 
 ```js
-accept(invitecode, cb)
+sbot.accept(invitecode, cb)
 ```
 
 This connects to the server address encoded in the invite-code, then calls `use()` on the server.
@@ -46,11 +46,11 @@ It will cause the server to follow the local user.
 Use an invite code created by this sbot instance (advanced function).
 
 ```bash
-use --feed {feedid}
+sbot use --feed {feedid}
 ```
 
 ```js
-use({ feed: }, cb)
+sbot.use({ feed: }, cb)
 ```
 
 This commands the receiving server to follow the given feed.

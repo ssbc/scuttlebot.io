@@ -21,25 +21,25 @@ module.exports = () => page({
     <p>
       Install Scuttlebot using NPM.
     </p>
-    ${ com.code({ bash: `npm install -g scuttlebot` }) }
+    ${ com.code({ bash: `npm install -g ssb-server` }) }
     <p>
       To update scuttlebot in the future, simply run the global install again.
     </p>
 
-    <h2>3. Create a run-sbot.sh script</h2>
+    <h2>3. Create a run-sbotserver.sh script</h2>
     <p>
-      Save the following script somewhere easy to find, such as <code>~/run-sbot.sh</code>.
+      Save the following script somewhere easy to find, such as <code>~/run-sbotserver.sh</code>.
       This script will help ensure uptime, even if scuttlebot experiences a crash:
     </p>
     ${ com.code({ bash: `
 #!/bin/bash
 while true; do
-  sbot server --host {your-hostname}
+  ssb-server start --host {your-hostname}
 done
     ` }) }
     <p>
       Be sure to replace <code>{your-hostname}</code> with the actual hostname of your server
-      For instance, if your server is <code>foobar.com</code>, then you should enter <code>sbot server --host foobar.com</code>.
+      For instance, if your server is <code>foobar.com</code>, then you should enter <code>ssb-server start --host foobar.com</code>.
     </p>
 
     <h2>4. Run the server script</h2>
@@ -47,14 +47,14 @@ done
       Use a session-manager such as <a href="https://www.rackaid.com/blog/linux-screen-tutorial-and-how-to/">screen</a> or <a href="https://wiki.archlinux.org/index.php/Tmux">tmux</a> to create a detachable session.
       Start the session and run the script:
     </p>
-    ${ com.code({ bash: `sh ~/run-sbot.sh` }) }
+    ${ com.code({ bash: `sh ~/run-sbotserver.sh` }) }
     <p>
       Then, detach the session.
     </p>
 
     <h2>5. Confirm Scuttlebot server is running</h2>
     <p>
-      To check if sbot is running, use the following command:
+      To check if the server is running, use the following command:
     </p>
     ${ com.code({ bash: `sbot whoami` }) }
     <p>
