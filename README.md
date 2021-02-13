@@ -1,3 +1,13 @@
+# Current version
+
+Please see:
+https://git.scuttlebot.io/%25hg8wG6xCDKVWoPYCS84HY7Adrd6JEUYoM23%2BGwn24I4%3D.sha256
+`ssb://%hg8wG6xCDKVWoPYCS84HY7Adrd6JEUYoM23+Gwn24I4=.sha256`
+
+---
+
+# :warning: Deprecated version :
+
 # Scuttlebot.io
 
 Source/assets for https://scuttlebot.io
