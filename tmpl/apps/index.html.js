@@ -8,7 +8,7 @@ module.exports = () => page({
     { id: 'patchwork', title: 'Patchwork', desc: 'Inbox, social feed, and profiles.', url: 'https://github.com/ssbc/patchwork' },
     { id: 'patchbay', title: 'Patchbay', desc: 'An alternative Secure Scuttlebutt client interface', url: 'https://github.com/ssbc/patchbay' },
     { id: 'manyverse', title: 'Manyverse', desc: 'Beta Android client', url: 'https://www.manyver.se' },
-    { id: 'oasis', title: 'Oasis', desc: 'Web / desktop ssb app with the most active development. .', url: 'https://github.com/fraction/oasis' },
+    { id: 'oasis', title: 'Oasis', desc: 'Themed HTML web UI without JavaScript', url: 'https://github.com/fraction/oasis'},
     { id: 'patchfoo', title: 'Patchfoo', desc: 'Plain SSB web UI. Uses HTML forms instead of client-side JS.', url: 'https://git.scuttlebot.io/%25YAg1hicat%2B2GELjE2QJzDwlAWcx0ML%2B1sXEdsWwvdt8%3D.sha256' },
     { id: 'planetary', title: 'Planetary', desc: 'iOS app with preloaded pubs for easier onboarding.', url: 'https://apps.apple.com/us/app/planetary-app/id1481617318' },
     { id: 'ferment', title: 'Ferment', desc: 'Peer-to-peer audio publishing and streaming.', url: 'https://github.com/fermentation/ferment' },
