@@ -3,7 +3,7 @@
 A post is a text-based message, for a public or private audience.
 It can be a reply to other posts.
 
-There's not a limit on the length of the text, but all Scuttlebot messages (including their headers) must be less than 8KB.
+There's not a limit on the length of the text, but all Scuttlebot messages (including their headers) should be no longer than 8KiB (8192 bytes) for compatibility.  However, due to a quirk in validation of some implementations, messages up to 8192 UTF-8 characters must be tolerated.
 
 ```js
 {
